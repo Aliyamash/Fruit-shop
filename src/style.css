@@ -1,0 +1,124 @@
+@tailwind base;
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-VariableFont_wght.ttf");
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Quicksand";
+  src: url("../fonts/static/Quicksand-medium.ttf");
+  font-style: normal;
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Quicksand-bold";
+  src: url("../fonts/static/Quicksand-bold.ttf");
+  font-style: normal;
+  font-weight: 900;
+}
+@font-face {
+  font-family: "lato";
+  src: url("../fonts/Lato-Regular.ttf");
+  font-style: normal;
+  font-weight: 900;
+}
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .c-container {
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (width >= 40rem) {
+  .container {
+    max-width: 92%;
+  }
+}
+@media (width >= 48rem) {
+  .container {
+    max-width: 95%;
+  }
+}
+@media (width >= 80rem) {
+  .container {
+    max-width: 1200px;
+  }
+}
+@media (width >= 1600px) {
+  .container {
+    max-width: 1584px;
+  }
+}
+body {
+  font-family: "Quicksand", Arial, Helvetica, sans-serif;
+}
+.logo-title {
+  font-family: "Montserrat";
+  font-weight: 600;
+}
+.title {
+  font-family: "Quicksand-bold";
+}
+.lato {
+  font-family: "lato";
+}
+.open {
+  transform: translateX(0);
+  transition: transform 0.5s ease-in-out;
+}
+@layer components {
+  .header-mobile {
+    @apply h-screen shadow-2xl shadow-zinc-700 bg-white w-[320px] p-2 rounded-r-3xl absolute top-0 translate-x-[-100%];
+  }
+  .header-desktop {
+    @apply h-full shadow-none bg-transparent w-full p-0 rounded-none static translate-x-[0];
+  }
+}
+
+.swiper {
+  width: 100%;
+  height: 100%
+}
+
+.swiper-slide {
+  width: 342px;
+  height: 100% !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 16px;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+/* 
+
+<div class="flex flex-row w-fit bg-white border border-1 border-[#BCE3C9] absolute top-1/2 text-[#BCE3C9]">
+    
+                <div class="px-1">
+                  <i class="fa-regular fa-heart fa-2xs"></i>
+                </div>
+                <div class="border-r border-l px-1">
+                  <i class="fa-solid fa-shuffle fa-2xs"></i>
+                </div>
+                <div class="px-1">
+                    <i class="fa-regular fa-eye fa-2xs"></i>
+                </div>
+              </div>
+*/
