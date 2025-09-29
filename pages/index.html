@@ -22,7 +22,7 @@
           <div class="flex w-[230px] gap-2">
             <img class="w-[80px] h-full object-cover" src="../src/images/logo.png" alt="logo">
             <div class="flex flex-col">
-              <h1 class="text-[#3BB77E] font-bold title text-2xl tracking-widest">LOGO</h1>
+              <h1 class="text-[#3BB77E] font-bold title text-3xl tracking-widest">LOGO</h1>
               <p class="logo-title w-full text-sm text-[#253D4E]">Mart & Grocery</p>
             </div>
           </div>
@@ -34,12 +34,12 @@
         <hr class="block md:hidden my-2 w-full">
 
         <!-- search and auth -->
-        <div class="flex justify-between items-center w-full xl:w-8/12 gap-8">
+        <div class="flex justify-between w-full gap-8">
           <!-- Search bar -->
           <div
-            class="flex items-center rounded-md w-full px-4 py-2 md:border-2 border-[#BCE3C9] justify-start md:justify-between">
+            class="flex items-center md:w-2/3 ml-28 rounded-md w-full px-4 py-2 md:border-2 border-[#BCE3C9] justify-start md:justify-between">
             <input
-              class="hidden md:block focus:outline-none w-full max-w-[300px] md:max-w-[300px] lg:max-w-[500px] xl:max-w-[700px]"
+              class="hidden md:block focus:outline-none w-full max-w-[300px] md:max-w-[300px] lg:max-w-[500px] xl:max-w-[700px] "
               type="text" placeholder="Search for items">
             <button>
               <i class="fas fa-magnifying-glass fa-lg text-gray-500"></i>
@@ -68,11 +68,12 @@
       </div>
     </div>
   </header>
+  
   <hr>
 
   <!-- second header -->
   <div class="bg-[#33333381] w-full h-full absolute top-0 right-0 left-0 z-10 translate-x-[-100%]" id="overlay"></div>
-  <section class="header-mobile md:header-desktop z-50" id="mobile-header">
+  <section class="header-mobile md:header-desktop" id="mobile-header">
     <div class=" c-container py-4 ">
       <div class="flex flex-col md:flex-row md:items-center justify-between gap-2">
         <!-- header lists -->
@@ -475,10 +476,11 @@
       </div>
     </div>
   </section>
+
   <hr class="mb-4 md:mb-8">
 
   <!-- hero -->
-  <section class="c-container ">
+    <section class="c-container">
     <div class="relative w-full md:h-[538px] h-full bg-[#FDC04033]  overflow-hidden rounded-3xl">
       <img class="absolute right-0 left-0 top-0 w-full h-full object-cover" src="../src/images/bg-hero2.png"
         alt="bg-hero">
@@ -489,8 +491,8 @@
           class="absolute right-0 top-0 lg:max-w-[895px] md:max-w-[695px] max-w-[200px] w-full h-auto object-cover pointer-events-none"
           src="../src/images/bg-hero.png" alt="bg-hero">
 
-        <div class="m-4 md:m-16 z-50">
-          <p class="text-xl md:text-5xl lg:text-7xl title text-[#253D4E] w-1/2">Don’t miss
+        <div class="p-6 md:p-24 z-50">
+          <p class="text-xl md:text-5xl lg:text-7xl title text-[#253D4E] w-1/2 md:w-2/3">Don’t miss
             amazing grocery deals</p>
           <p class="hidden md:block mt-12 text-3xl lato text-[#7E7E7E] font-thin mb-16">Sign up
             for the daily newsletter</p>
@@ -510,7 +512,7 @@
       <button class="bg-[#3BB77E] rounded-full  px-6 py-3 shadow-md  text-white">Subscribe</button>
     </div>
 
-  </section>
+  </section>  
 
 
   <!-- Featured Categories -->
@@ -593,7 +595,7 @@
   </section>
 
 
-  <section class="pt-10 pb-20">
+  <section class="py-10 ">
     <div class="c-container">
       <div class="hidden  md:grid grid-cols-3 items-center justify-around gap-8">
         <div class="bg-[#F0E8D5] w-full h-full rounded-2xl relative overflow-hidden p-10">
@@ -706,13 +708,13 @@
 
   <!-- Popular Products -->
   <section>
-    <div class="md:c-container py-20">
-      <div class="flex justify-between items-center md:mb-20  mx-5 md:mx-0 mb-10">
+    <div class="md:c-container md:py-20 py-8">
+      <div class="flex justify-between items-center md:mb-20  mx-5 md:mx-0 mb-6">
         <h1 class="md:text-3xl text-xl title text-[#253D4E] ">Popular Products</h1>
         <span class="md:hidden"><i class="fa-solid fa-angle-right fa-lg" style="color: #7E7E7E;"></i></span>
       </div>
 
-      <div class="relative w-full">
+      <div class="relative w-full pl-5 md:pl-0">
         <div class="swiper mySwiper1">
           <div class="swiper-wrapper">
 
@@ -758,8 +760,8 @@
                   <p class="text-xs text-[#7E7E7E]">500 gram</p>
                 </div>
                 <div class="flex justify-between items-center">
-                  <div class="flex items-center gap-2">
-                    <strong class="text-lg text-[#3BB77E] font-bold title">$2.51</strong>
+                  <div class="flex items-center justify-between gap-2">
+                    <strong class="text-base md:text-lg text-[#3BB77E] font-bold title">$2.51</strong>
                     <del class="text-xs title text-[#7E7E7E]">$2.80</del>
                   </div>
 
@@ -785,7 +787,7 @@
             </div>
 
             <div
-              class="swiper-slide group relative  overflow-hidden bg-white shadow-zinc-300 border border-1 border-[#E5E5E5] hover:border-[#BCE3C9] flex flex-col justify-center items-center pt-10 px-4 pb-4">
+              class="swiper-slide group relative  overflow-hidden bg-white shadow-zinc-300 md:border md:border-1 border-[#E5E5E5] hover:border-[#BCE3C9] shadow-xl md:shadow-none flex flex-col justify-center items-center pt-10 px-4 pb-4">
               <div class="absolute bg-[#FD6E6E] rounded-r-full pl-5 py-3 pr-3 top-0 md:top-5 -left-2">
                 <p class="text-white text-xs">Hot</p>
               </div>
@@ -825,14 +827,14 @@
                   <p class="text-xs text-[#7E7E7E]">500 gram</p>
                 </div>
                 <div class="flex justify-between items-center">
-                  <div class="flex items-center gap-2">
-                    <strong class="text-lg text-[#3BB77E] font-bold title">$2.51</strong>
+                  <div class="flex items-center justify-between gap-2">
+                    <strong class="text-base md:text-lg text-[#3BB77E] font-bold title">$2.51</strong>
                     <del class="text-xs title text-[#7E7E7E]">$2.80</del>
                   </div>
 
                   <button class="flex justify-between gap-2 items-center bg-[#DEF9EC] px-3 py-1 rounded-lg">
-                    <p class="text-[#3BB77E] title text-xs">Add</p>
-                    <p class="text-[#3BB77E]">+</p>
+                    <p class="text-[#3BB77E] md:block hidden title text-xs">Add</p>
+                    <p class="text-[#3BB77E] title">+</p>
                   </button>
 
 
@@ -843,7 +845,7 @@
             </div>
 
             <div
-              class="swiper-slide group relative  overflow-hidden bg-white shadow-zinc-300 border border-1 border-[#E5E5E5] hover:border-[#BCE3C9] flex flex-col justify-center items-center pt-10 px-4 pb-4">
+              class="swiper-slide group relative  overflow-hidden bg-white shadow-zinc-300 md:border md:border-1 border-[#E5E5E5] hover:border-[#BCE3C9] shadow-xl md:shadow-none flex flex-col justify-center items-center pt-10 px-4 pb-4">
               <div class="absolute bg-[#FDC040] rounded-r-full pl-5 py-3 pr-3 top-0 md:top-5 -left-2">
                 <p class="text-white text-xs">Sale</p>
               </div>
@@ -883,14 +885,14 @@
                   <p class="text-xs text-[#7E7E7E]">500 gram</p>
                 </div>
                 <div class="flex justify-between items-center">
-                  <div class="flex items-center gap-2">
-                    <strong class="text-lg text-[#3BB77E] font-bold title">$2.51</strong>
+                  <div class="flex items-center justify-between gap-2">
+                    <strong class="text-base md:text-lg text-[#3BB77E] font-bold title">$2.51</strong>
                     <del class="text-xs title text-[#7E7E7E]">$2.80</del>
                   </div>
 
                   <button class="flex justify-between gap-2 items-center bg-[#DEF9EC] px-3 py-1 rounded-lg">
-                    <p class="text-[#3BB77E] title text-xs">Add</p>
-                    <p class="text-[#3BB77E]">+</p>
+                    <p class="text-[#3BB77E] md:block hidden title text-xs">Add</p>
+                    <p class="text-[#3BB77E] title">+</p>
                   </button>
 
 
@@ -901,7 +903,7 @@
             </div>
 
             <div
-              class="swiper-slide group relative  overflow-hidden bg-white shadow-zinc-300 border border-1 border-[#E5E5E5] hover:border-[#BCE3C9] flex flex-col justify-center items-center pt-10 px-4 pb-4">
+              class="swiper-slide group relative  overflow-hidden bg-white shadow-zinc-300 md:border md:border-1 border-[#E5E5E5] hover:border-[#BCE3C9] shadow-xl md:shadow-none flex flex-col justify-center items-center pt-10 px-4 pb-4">
 
               <div class="w-fit h-[100px] md:h-[144px] mx-auto mb-10">
                 <img class="w-full h-full object-cover" src="../src/images/Popular Products/felfel.png" alt="anbe">
@@ -940,14 +942,14 @@
                   <p class="text-xs text-[#7E7E7E]">500 gram</p>
                 </div>
                 <div class="flex justify-between items-center">
-                  <div class="flex items-center gap-2">
-                    <strong class="text-lg text-[#3BB77E] font-bold title">$2.51</strong>
+                  <div class="flex items-center justify-between gap-2">
+                    <strong class="text-base md:text-lg text-[#3BB77E] font-bold title">$2.51</strong>
                     <del class="text-xs title text-[#7E7E7E]">$2.80</del>
                   </div>
 
                   <button class="flex justify-between gap-2 items-center bg-[#DEF9EC] px-3 py-1 rounded-lg">
-                    <p class="text-[#3BB77E] title text-xs">Add</p>
-                    <p class="text-[#3BB77E]">+</p>
+                    <p class="text-[#3BB77E] md:block hidden title text-xs">Add</p>
+                    <p class="text-[#3BB77E] title">+</p>
                   </button>
 
 
@@ -958,7 +960,7 @@
             </div>
 
             <div
-              class="swiper-slide group relative overflow-hidden bg-white shadow-zinc-300 border border-1 border-[#E5E5E5] hover:border-[#BCE3C9] flex flex-col justify-center items-center pt-10 px-4 pb-4">
+              class="swiper-slide group relative overflow-hidden bg-white shadow-zinc-300 md:border md:border-1 border-[#E5E5E5] hover:border-[#BCE3C9] shadow-xl md:shadow-none flex flex-col justify-center items-center pt-10 px-4 pb-4">
 
               <div class="w-fit h-[100px] md:h-[144px] mx-auto mb-10">
                 <img class="w-full h-full object-cover" src="../src/images/Popular Products/limo.png" alt="anbe">
@@ -996,14 +998,14 @@
                   <p class="text-xs text-[#7E7E7E]">500 gram</p>
                 </div>
                 <div class="flex justify-between items-center">
-                  <div class="flex items-center gap-2">
-                    <strong class="text-lg text-[#3BB77E] font-bold title">$2.51</strong>
+                  <div class="flex items-center justify-between gap-2">
+                    <strong class="text-base md:text-lg text-[#3BB77E] font-bold title">$2.51</strong>
                     <del class="text-xs title text-[#7E7E7E]">$2.80</del>
                   </div>
 
                   <button class="flex justify-between gap-2 items-center bg-[#DEF9EC] px-3 py-1 rounded-lg">
-                    <p class="text-[#3BB77E] title text-xs">Add</p>
-                    <p class="text-[#3BB77E]">+</p>
+                    <p class="text-[#3BB77E] md:block hidden title text-xs">Add</p>
+                    <p class="text-[#3BB77E] title">+</p>
                   </button>
 
 
@@ -1014,7 +1016,7 @@
             </div>
 
             <div
-              class="swiper-slide group relative  overflow-hidden bg-white shadow-zinc-300 border border-1 border-[#E5E5E5] hover:border-[#BCE3C9] flex flex-col justify-center items-center pt-10 px-4 pb-4">
+              class="swiper-slide group relative  overflow-hidden bg-white shadow-zinc-300 md:border md:border-1 border-[#E5E5E5] hover:border-[#BCE3C9] shadow-xl md:shadow-none flex flex-col justify-center items-center pt-10 px-4 pb-4">
               <div class="absolute bg-[#FD6E6E] rounded-r-full pl-5 py-3 pr-3 top-0 md:top-5 -left-2">
                 <p class="text-white text-xs">Hot</p>
               </div>
@@ -1054,14 +1056,14 @@
                   <p class="text-xs text-[#7E7E7E]">500 gram</p>
                 </div>
                 <div class="flex justify-between items-center">
-                  <div class="flex items-center gap-2">
-                    <strong class="text-lg text-[#3BB77E] font-bold title">$2.51</strong>
+                  <div class="flex items-center justify-between gap-2">
+                    <strong class="text-base md:text-lg text-[#3BB77E] font-bold title">$2.51</strong>
                     <del class="text-xs title text-[#7E7E7E]">$2.80</del>
                   </div>
 
                   <button class="flex justify-between gap-2 items-center bg-[#DEF9EC] px-3 py-1 rounded-lg">
-                    <p class="text-[#3BB77E] title text-xs">Add</p>
-                    <p class="text-[#3BB77E]">+</p>
+                    <p class="text-[#3BB77E] md:block hidden title text-xs">Add</p>
+                    <p class="text-[#3BB77E] title">+</p>
                   </button>
 
 
@@ -1101,20 +1103,20 @@
 
   <!-- Popular Fruits -->
   <section>
-    <div class="md:c-container py-20">
-      <div class="flex justify-between items-center md:mb-20  mx-5 md:mx-0 mb-10">
+    <div class="md:c-container md:py-20 py-8">
+      <div class="flex justify-between items-center md:mb-20  mx-5 md:mx-0 mb-6">
         <h1 class="md:text-3xl text-xl title text-[#253D4E] ">Popular Fruits</h1>
         <span class="md:hidden"><i class="fa-solid fa-angle-right fa-lg" style="color: #7E7E7E;"></i></span>
       </div>
 
-      <div class="relative w-full">
+      <div class="relative w-full pl-5 md:pl-0">
         <div class="swiper mySwiper2">
           <div class="swiper-wrapper">
 
 
 
             <div
-              class="swiper-slide group relative  overflow-hidden bg-white shadow-zinc-300 border border-1 border-[#E5E5E5] hover:border-[#BCE3C9] flex flex-col justify-center items-center pt-10 px-4 pb-4">
+              class="swiper-slide group relative  overflow-hidden bg-white shadow-zinc-300 md:border md:border-1 border-[#E5E5E5] hover:border-[#BCE3C9] shadow-xl md:shadow-none flex flex-col justify-center items-center pt-10 px-4 pb-4">
               <div class="absolute bg-[#FD6E6E] rounded-r-full pl-5 py-3 pr-3 top-0 md:top-5 -left-2">
                 <p class="text-white text-xs">Hot</p>
               </div>
@@ -1154,14 +1156,14 @@
                   <p class="text-xs text-[#7E7E7E]">500 gram</p>
                 </div>
                 <div class="flex justify-between items-center">
-                  <div class="flex items-center gap-2">
-                    <strong class="text-lg text-[#3BB77E] font-bold title">$2.51</strong>
+                  <div class="flex items-center justify-between gap-2">
+                    <strong class="text-base md:text-lg text-[#3BB77E] font-bold title">$2.51</strong>
                     <del class="text-xs title text-[#7E7E7E]">$2.80</del>
                   </div>
 
                   <button class="flex justify-between gap-2 items-center bg-[#DEF9EC] px-3 py-1 rounded-lg">
-                    <p class="text-[#3BB77E] title text-xs">Add</p>
-                    <p class="text-[#3BB77E]">+</p>
+                    <p class="text-[#3BB77E] md:block hidden title text-xs">Add</p>
+                    <p class="text-[#3BB77E] title">+</p>
                   </button>
 
 
@@ -1215,8 +1217,8 @@
                   <p class="text-xs text-[#7E7E7E]">500 gram</p>
                 </div>
                 <div class="flex justify-between items-center">
-                  <div class="flex items-center gap-2">
-                    <strong class="text-lg text-[#3BB77E] font-bold title">$2.51</strong>
+                  <div class="flex items-center justify-between gap-2">
+                    <strong class="text-base tmd:ext-lg text-[#3BB77E] font-bold title">$2.51</strong>
                     <del class="text-xs title text-[#7E7E7E]">$2.80</del>
                   </div>
 
@@ -1242,7 +1244,7 @@
             </div>
 
             <div
-              class="swiper-slide group relative  overflow-hidden bg-white shadow-zinc-300 border border-1 border-[#E5E5E5] hover:border-[#BCE3C9] flex flex-col justify-center items-center pt-10 px-4 pb-4">
+              class="swiper-slide group relative  overflow-hidden bg-white shadow-zinc-300 md:border md:border-1 border-[#E5E5E5] hover:border-[#BCE3C9] shadow-xl md:shadow-none flex flex-col justify-center items-center pt-10 px-4 pb-4">
 
               <div class="w-fit h-[100px] md:h-[144px] mx-auto mb-10">
                 <img class="w-full h-full object-cover" src="../src/images/Popular Products/felfel.png" alt="anbe">
@@ -1281,14 +1283,14 @@
                   <p class="text-xs text-[#7E7E7E]">500 gram</p>
                 </div>
                 <div class="flex justify-between items-center">
-                  <div class="flex items-center gap-2">
-                    <strong class="text-lg text-[#3BB77E] font-bold title">$2.51</strong>
+                  <div class="flex items-center justify-between gap-2">
+                    <strong class="text-base tmd:ext-lg text-[#3BB77E] font-bold title">$2.51</strong>
                     <del class="text-xs title text-[#7E7E7E]">$2.80</del>
                   </div>
 
                   <button class="flex justify-between gap-2 items-center bg-[#DEF9EC] px-3 py-1 rounded-lg">
-                    <p class="text-[#3BB77E] title text-xs">Add</p>
-                    <p class="text-[#3BB77E]">+</p>
+                    <p class="text-[#3BB77E] md:block hidden title text-xs">Add</p>
+                    <p class="text-[#3BB77E] title">+</p>
                   </button>
 
 
@@ -1299,7 +1301,7 @@
             </div>
 
             <div
-              class="swiper-slide group relative overflow-hidden bg-white shadow-zinc-300 border border-1 border-[#E5E5E5] hover:border-[#BCE3C9] flex flex-col justify-center items-center pt-10 px-4 pb-4">
+              class="swiper-slide group relative overflow-hidden bg-white shadow-zinc-300 md:border md:border-1 border-[#E5E5E5] hover:border-[#BCE3C9] shadow-xl md:shadow-none flex flex-col justify-center items-center pt-10 px-4 pb-4">
 
               <div class="w-fit h-[100px] md:h-[144px] mx-auto mb-10">
                 <img class="w-full h-full object-cover" src="../src/images/Popular Products/limo.png" alt="anbe">
@@ -1337,14 +1339,14 @@
                   <p class="text-xs text-[#7E7E7E]">500 gram</p>
                 </div>
                 <div class="flex justify-between items-center">
-                  <div class="flex items-center gap-2">
-                    <strong class="text-lg text-[#3BB77E] font-bold title">$2.51</strong>
+                  <div class="flex items-center justify-between gap-2">
+                    <strong class="text-base tmd:ext-lg text-[#3BB77E] font-bold title">$2.51</strong>
                     <del class="text-xs title text-[#7E7E7E]">$2.80</del>
                   </div>
 
                   <button class="flex justify-between gap-2 items-center bg-[#DEF9EC] px-3 py-1 rounded-lg">
-                    <p class="text-[#3BB77E] title text-xs">Add</p>
-                    <p class="text-[#3BB77E]">+</p>
+                    <p class="text-[#3BB77E] md:block hidden title text-xs">Add</p>
+                    <p class="text-[#3BB77E] title">+</p>
                   </button>
 
 
@@ -1354,7 +1356,7 @@
               </div>
             </div>
             <div
-              class="swiper-slide group relative  overflow-hidden bg-white shadow-zinc-300 border border-1 border-[#E5E5E5] hover:border-[#BCE3C9] flex flex-col justify-center items-center pt-10 px-4 pb-4">
+              class="swiper-slide group relative  overflow-hidden bg-white shadow-zinc-300 md:border md:border-1 border-[#E5E5E5] hover:border-[#BCE3C9] shadow-xl md:shadow-none flex flex-col justify-center items-center pt-10 px-4 pb-4">
               <div class="absolute bg-[#FDC040] rounded-r-full pl-5 py-3 pr-3 top-0 md:top-5 -left-2">
                 <p class="text-white text-xs">Sale</p>
               </div>
@@ -1394,14 +1396,14 @@
                   <p class="text-xs text-[#7E7E7E]">500 gram</p>
                 </div>
                 <div class="flex justify-between items-center">
-                  <div class="flex items-center gap-2">
-                    <strong class="text-lg text-[#3BB77E] font-bold title">$2.51</strong>
+                  <div class="flex items-center justify-between gap-2">
+                    <strong class="text-base tmd:ext-lg text-[#3BB77E] font-bold title">$2.51</strong>
                     <del class="text-xs title text-[#7E7E7E]">$2.80</del>
                   </div>
 
                   <button class="flex justify-between gap-2 items-center bg-[#DEF9EC] px-3 py-1 rounded-lg">
-                    <p class="text-[#3BB77E] title text-xs">Add</p>
-                    <p class="text-[#3BB77E]">+</p>
+                    <p class="text-[#3BB77E] md:block hidden title text-xs">Add</p>
+                    <p class="text-[#3BB77E] title">+</p>
                   </button>
 
 
@@ -1411,7 +1413,7 @@
               </div>
             </div>
             <div
-              class="swiper-slide group relative  overflow-hidden bg-white shadow-zinc-300 border border-1 border-[#E5E5E5] hover:border-[#BCE3C9] flex flex-col justify-center items-center pt-10 px-4 pb-4">
+              class="swiper-slide group relative  overflow-hidden bg-white shadow-zinc-300 md:border md:border-1 border-[#E5E5E5] hover:border-[#BCE3C9] shadow-xl md:shadow-none flex flex-col justify-center items-center pt-10 px-4 pb-4">
               <div class="absolute bg-[#FD6E6E] rounded-r-full pl-5 py-3 pr-3 top-0 md:top-5 -left-2">
                 <p class="text-white text-xs">Hot</p>
               </div>
@@ -1451,14 +1453,14 @@
                   <p class="text-xs text-[#7E7E7E]">500 gram</p>
                 </div>
                 <div class="flex justify-between items-center">
-                  <div class="flex items-center gap-2">
-                    <strong class="text-lg text-[#3BB77E] font-bold title">$2.51</strong>
+                  <div class="flex items-center justify-between gap-2">
+                    <strong class="text-base tmd:ext-lg text-[#3BB77E] font-bold title">$2.51</strong>
                     <del class="text-xs title text-[#7E7E7E]">$2.80</del>
                   </div>
 
                   <button class="flex justify-between gap-2 items-center bg-[#DEF9EC] px-3 py-1 rounded-lg">
-                    <p class="text-[#3BB77E] title text-xs">Add</p>
-                    <p class="text-[#3BB77E]">+</p>
+                    <p class="text-[#3BB77E] md:block hidden title text-xs">Add</p>
+                    <p class="text-[#3BB77E] title">+</p>
                   </button>
 
 
@@ -1497,282 +1499,1169 @@
 
   <!-- Our-offers -->
 
-
-
   <section class="md:c-container">
     <div class="flex justify-between items-center md:mb-20  mx-5 md:mx-0 mb-10">
-      <h1 class="md:text-3xl text-xl title text-[#253D4E] ">Popular Fruits</h1>
+      <h1 class="md:text-3xl text-xl title text-[#253D4E] ">Our-offers</h1>
       <span class="md:hidden"><i class="fa-solid fa-angle-right fa-lg" style="color: #7E7E7E;"></i></span>
     </div>
 
 
-  <div class="flex justify-evenly">
-    <div class="rounded-full relative">
-        <img class="w-full h-full object-cover rounded-3xl" src="../src/images/our offers/barg.jpg" alt="barg-offer">
-        <p></p>
+
+    <div class="md:hidden w-full mb-10 pl-5">
+
+
+      <div class="swiper mySwiper3">
+        <div class="swiper-wrapper">
+
+          <div
+            class="swiper-slide group relative  overflow-hidden bg-white shadow-zinc-300 md:border md:border-1 border-[#E5E5E5] hover:border-[#BCE3C9] shadow-xl md:shadow-none flex flex-col justify-center items-center pt-10 px-4 pb-4">
+            <div class="absolute bg-[#FD6E6E] rounded-r-full pl-5 py-3 pr-3 top-0 md:top-5 -left-2">
+              <p class="text-white text-xs">Save 25%</p>
+            </div>
+            <div class="w-fit h-[80px] mx-auto mb-10">
+              <img class="w-full h-full object-cover" src="../src/images/our offers/khiar.jpg" alt="khiar">
+            </div>
+            <div
+              class="opacity-0 invisible transition-all group-hover:opacity-100 group-hover:visible flex flex-row text-xl md:text-2xl w-fit bg-white border-2 border-[#BCE3C9] absolute top-1/4 md:top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2  text-[#3BB77E] rounded-lg">
+              <button class="px-2 hover:bg-[#BCE3C9] hover:text-white transition-all duration-300 rounded-l-lg">
+                <i class="fa-regular fa-heart fa-xs"></i>
+              </button>
+              <button class="border-r border-l px-2 hover:bg-[#BCE3C9] hover:text-white transition-all duration-300">
+                <i class="fa-solid fa-shuffle fa-xs"></i>
+              </button>
+              <button class="px-2 hover:bg-[#BCE3C9] hover:text-white transition-all duration-300 rounded-r-lg">
+                <i class="fa-regular fa-eye fa-xs"></i>
+              </button>
+            </div>
+
+            <div class="">
+              <div class="">
+                <h3 class="text-xs mb-1 text-[#7E7E7E]">Hodo Foods</h3>
+                <h1 class="title text-sm md:pr-5 line-clamp-2">Seeds of Change Organic Quinoa, Brown, & Red Rice</h1>
+              </div>
+
+              <div class="flex items-center gap-3 my-2">
+                <div class="flex gap-1 items-center">
+                  <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                  <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                  <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                  <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                  <i class="fa-solid fa-star fa-2xs" style="color: #CDCDCD;"></i>
+                </div>
+                <p class="text-sm text-[#7E7E7E]">(4.0)</p>
+              </div>
+
+              <div class="mb-4">
+                <p class="text-xs text-[#7E7E7E]">500 gram</p>
+              </div>
+
+              <div class="flex justify-between items-center mb-4">
+                <div class="flex items-center gap-2">
+                  <strong class="text-lg text-[#3BB77E] font-bold title">$2.51</strong>
+                  <del class="text-xs title text-[#7E7E7E]">$2.80</del>
+                </div>
+              </div>
+
+
+              <div class="mb-5">
+                <div class="w-full max-w-full h-2 bg-gray-200 rounded-full overflow-hidden mb-2">
+                  <div class="h-full rounded-full bg-[#3BB77E] w-[70%] transition-all duration-500"></div>
+                </div>
+                <p class="text-xs"><span class="title">Sold:</span> 90/120</p>
+              </div>
+
+
+              <a href="#"
+                class="text-center text-sm flex gap-2 items-center justify-center text-white focus:bg-[#FDC040] bg-[#3BB77E] transition-all duration-300 w-full px-4 py-2 rounded-lg">
+                <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+                <p>Add To Cart</p>
+              </a>
+            </div>
+          </div>
+
+
+          <div
+            class="swiper-slide group relative  overflow-hidden bg-white shadow-zinc-300 md:border md:border-1 border-[#E5E5E5] hover:border-[#BCE3C9] shadow-xl md:shadow-none flex flex-col justify-center items-center pt-10 px-4 pb-4">
+            <div class="absolute bg-[#FD6E6E] rounded-r-full pl-5 py-3 pr-3 top-0 md:top-5 -left-2">
+              <p class="text-white text-xs">Save 25%</p>
+            </div>
+            <div class="w-fit h-[80px] mx-auto mb-10">
+              <img class="w-full h-full object-cover" src="../src/images/our offers/humber.jpg" alt="humber">
+            </div>
+            <div
+              class="opacity-0 invisible transition-all group-hover:opacity-100 group-hover:visible flex flex-row text-xl md:text-2xl w-fit bg-white border-2 border-[#BCE3C9] absolute top-1/4 md:top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2  text-[#3BB77E] rounded-lg">
+              <button class="px-2 hover:bg-[#BCE3C9] hover:text-white transition-all duration-300 rounded-l-lg">
+                <i class="fa-regular fa-heart fa-xs"></i>
+              </button>
+              <button class="border-r border-l px-2 hover:bg-[#BCE3C9] hover:text-white transition-all duration-300">
+                <i class="fa-solid fa-shuffle fa-xs"></i>
+              </button>
+              <button class="px-2 hover:bg-[#BCE3C9] hover:text-white transition-all duration-300 rounded-r-lg">
+                <i class="fa-regular fa-eye fa-xs"></i>
+              </button>
+            </div>
+
+            <div class="">
+              <div class="">
+                <h3 class="text-xs mb-1 text-[#7E7E7E]">Hodo Foods</h3>
+                <h1 class="title text-sm md:pr-5 line-clamp-2">All Natural Italian-Style Chicken Meatballs</h1>
+              </div>
+
+              <div class="flex items-center gap-3 my-2">
+                <div class="flex gap-1 items-center">
+                  <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                  <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                  <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                  <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                  <i class="fa-solid fa-star fa-2xs" style="color: #CDCDCD;"></i>
+                </div>
+                <p class="text-sm text-[#7E7E7E]">(4.0)</p>
+              </div>
+
+              <div class="mb-4">
+                <p class="text-xs text-[#7E7E7E]">500 gram</p>
+              </div>
+
+              <div class="flex justify-between items-center mb-4">
+                <div class="flex items-center gap-2">
+                  <strong class="text-lg text-[#3BB77E] font-bold title">$2.51</strong>
+                  <del class="text-xs title text-[#7E7E7E]">$2.80</del>
+                </div>
+              </div>
+
+
+              <div class="mb-5">
+                <div class="w-full max-w-full h-2 bg-gray-200 rounded-full overflow-hidden mb-2">
+                  <div class="h-full rounded-full bg-[#3BB77E] w-[70%] transition-all duration-500"></div>
+                </div>
+                <p class="text-xs"><span class="title">Sold:</span> 90/120</p>
+              </div>
+
+
+              <a href="#"
+                class="text-center text-sm flex gap-2 items-center justify-center text-white focus:bg-[#FDC040] bg-[#3BB77E] transition-all duration-300 w-full px-4 py-2 rounded-lg">
+                <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+                <p>Add To Cart</p>
+              </a>
+            </div>
+          </div>
+
+
+          <div
+            class="swiper-slide group relative  overflow-hidden bg-white shadow-zinc-300 md:border md:border-1 border-[#E5E5E5] hover:border-[#BCE3C9] shadow-xl md:shadow-none flex flex-col justify-center items-center pt-10 px-4 pb-4">
+            <div class="absolute bg-[#FD6E6E] rounded-r-full pl-5 py-3 pr-3 top-0 md:top-5 -left-2">
+              <p class="text-white text-xs">Save 25%</p>
+            </div>
+            <div class="w-fit h-[80px] mx-auto mb-10">
+              <img class="w-full h-full object-cover" src="../src/images/our offers/pizza.jpg" alt="pizza">
+            </div>
+            <div
+              class="opacity-0 invisible transition-all group-hover:opacity-100 group-hover:visible flex flex-row text-xl md:text-2xl w-fit bg-white border-2 border-[#BCE3C9] absolute top-1/4 md:top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2  text-[#3BB77E] rounded-lg">
+              <button class="px-2 hover:bg-[#BCE3C9] hover:text-white transition-all duration-300 rounded-l-lg">
+                <i class="fa-regular fa-heart fa-xs"></i>
+              </button>
+              <button class="border-r border-l px-2 hover:bg-[#BCE3C9] hover:text-white transition-all duration-300">
+                <i class="fa-solid fa-shuffle fa-xs"></i>
+              </button>
+              <button class="px-2 hover:bg-[#BCE3C9] hover:text-white transition-all duration-300 rounded-r-lg">
+                <i class="fa-regular fa-eye fa-xs"></i>
+              </button>
+            </div>
+
+            <div class="">
+              <div class="">
+                <h3 class="text-xs mb-1 text-[#7E7E7E]">Hodo Foods</h3>
+                <h1 class="title text-sm md:pr-5 line-clamp-2">Angie’s Boomchickapop Sweet & Salty Kettle Corn</h1>
+              </div>
+
+              <div class="flex items-center gap-3 my-2">
+                <div class="flex gap-1 items-center">
+                  <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                  <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                  <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                  <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                  <i class="fa-solid fa-star fa-2xs" style="color: #CDCDCD;"></i>
+                </div>
+                <p class="text-sm text-[#7E7E7E]">(4.0)</p>
+              </div>
+
+              <div class="mb-4">
+                <p class="text-xs text-[#7E7E7E]">500 gram</p>
+              </div>
+
+              <div class="flex justify-between items-center mb-4">
+                <div class="flex items-center gap-2">
+                  <strong class="text-lg text-[#3BB77E] font-bold title">$2.51</strong>
+                  <del class="text-xs title text-[#7E7E7E]">$2.80</del>
+                </div>
+              </div>
+
+
+              <div class="mb-5">
+                <div class="w-full max-w-full h-2 bg-gray-200 rounded-full overflow-hidden mb-2">
+                  <div class="h-full rounded-full bg-[#3BB77E] w-[70%] transition-all duration-500"></div>
+                </div>
+                <p class="text-xs"><span class="title">Sold:</span> 90/120</p>
+              </div>
+
+
+              <a href="#"
+                class="text-center text-sm flex gap-2 items-center justify-center text-white focus:bg-[#FDC040] bg-[#3BB77E] transition-all duration-300 w-full px-4 py-2 rounded-lg">
+                <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+                <p>Add To Cart</p>
+              </a>
+            </div>
+          </div>
+
+          <div
+            class="swiper-slide group relative  overflow-hidden bg-white shadow-zinc-300 md:border md:border-1 border-[#E5E5E5] hover:border-[#BCE3C9] shadow-xl md:shadow-none flex flex-col justify-center items-center pt-10 px-4 pb-4">
+            <div class="absolute bg-[#FD6E6E] rounded-r-full pl-5 py-3 pr-3 top-0 md:top-5 -left-2">
+              <p class="text-white text-xs">Save 25%</p>
+            </div>
+            <div class="w-fit h-[80px] mx-auto mb-10">
+              <img class="w-full h-full object-cover" src="../src/images/our offers/kalam.png" alt="kalam">
+            </div>
+            <div
+              class="opacity-0 invisible transition-all group-hover:opacity-100 group-hover:visible flex flex-row text-xl md:text-2xl w-fit bg-white border-2 border-[#BCE3C9] absolute top-1/4 md:top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2  text-[#3BB77E] rounded-lg">
+              <button class="px-2 hover:bg-[#BCE3C9] hover:text-white transition-all duration-300 rounded-l-lg">
+                <i class="fa-regular fa-heart fa-xs"></i>
+              </button>
+              <button class="border-r border-l px-2 hover:bg-[#BCE3C9] hover:text-white transition-all duration-300">
+                <i class="fa-solid fa-shuffle fa-xs"></i>
+              </button>
+              <button class="px-2 hover:bg-[#BCE3C9] hover:text-white transition-all duration-300 rounded-r-lg">
+                <i class="fa-regular fa-eye fa-xs"></i>
+              </button>
+            </div>
+
+            <div class="">
+              <div class="">
+                <h3 class="text-xs mb-1 text-[#7E7E7E]">Hodo Foods</h3>
+                <h1 class="title text-sm md:pr-5 line-clamp-2">Foster Farms Takeout Crispy Classic Buffalo Wings</h1>
+              </div>
+
+              <div class="flex items-center gap-3 my-2">
+                <div class="flex gap-1 items-center">
+                  <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                  <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                  <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                  <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                  <i class="fa-solid fa-star fa-2xs" style="color: #CDCDCD;"></i>
+                </div>
+                <p class="text-sm text-[#7E7E7E]">(4.0)</p>
+              </div>
+
+              <div class="mb-4">
+                <p class="text-xs text-[#7E7E7E]">500 gram</p>
+              </div>
+
+              <div class="flex justify-between items-center mb-4">
+                <div class="flex items-center gap-2">
+                  <strong class="text-lg text-[#3BB77E] font-bold title">$2.51</strong>
+                  <del class="text-xs title text-[#7E7E7E]">$2.80</del>
+                </div>
+              </div>
+
+
+              <div class="mb-5">
+                <div class="w-full max-w-full h-2 bg-gray-200 rounded-full overflow-hidden mb-2">
+                  <div class="h-full rounded-full bg-[#3BB77E] w-[70%] transition-all duration-500"></div>
+                </div>
+                <p class="text-xs"><span class="title">Sold:</span> 90/120</p>
+              </div>
+
+
+              <a href="#"
+                class="text-center text-sm flex gap-2 items-center justify-center text-white focus:bg-[#FDC040] bg-[#3BB77E] transition-all duration-300 w-full px-4 py-2 rounded-lg">
+                <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+                <p>Add To Cart</p>
+              </a>
+            </div>
+          </div>
+
+
+
+
+        </div>
+      </div>
     </div>
+
+
+    <div class="hidden md:flex justify-between items-center gap-5 mb-10">
+
+      <div class="hidden md:block rounded-full relative w-[488px] h-[552px]">
+        <img class="w-full h-full object-cover rounded-3xl" src="../src/images/our offers/barg.jpg" alt="barg-offer">
+        <p class="block title text-[#253D4E] text-pretty text-5xl absolute top-0 p-10">Bring nature into your home </p>
+
+        <button
+          class="flex gap-2 items-center z-20 absolute bottom-10 left-10 text-xs text-white bg-[#FDC040] px-5 py-3 title rounded-md"><span>Shop
+            Now</span> <i class="fa-solid fa-arrow-right fa-2xs" style="color: #ffffff;"></i></button>
+
+
+      </div>
 
       <div>
-<div class="grid grid-cols-4 justify-between gap-5">
-      
-      <div
-        class="swiper-slide group relative  overflow-hidden bg-white shadow-zinc-300 border border-1 border-[#E5E5E5] hover:border-[#BCE3C9] flex flex-col justify-center items-center pt-10 px-4 pb-4">
-        <div class="absolute bg-[#FD6E6E] rounded-r-full pl-5 py-3 pr-3 top-0 md:top-5 -left-2">
-          <p class="text-white text-xs">Save 25%</p>
-        </div>
-        <div class="w-fit h-[100px] md:h-[144px] mx-auto mb-10">
-          <img class="w-full h-full object-cover" src="../src/images/our offers/khiar.jpg" alt="khiar">
-        </div>
-        <div
-          class="opacity-0 invisible transition-all group-hover:opacity-100 group-hover:visible flex flex-row text-xl md:text-2xl w-fit bg-white border-2 border-[#BCE3C9] absolute top-1/4 md:top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2  text-[#3BB77E] rounded-lg">
-          <button class="px-2 hover:bg-[#BCE3C9] hover:text-white transition-all duration-300 rounded-l-lg">
-            <i class="fa-regular fa-heart fa-xs"></i>
-          </button>
-          <button class="border-r border-l px-2 hover:bg-[#BCE3C9] hover:text-white transition-all duration-300">
-            <i class="fa-solid fa-shuffle fa-xs"></i>
-          </button>
-          <button class="px-2 hover:bg-[#BCE3C9] hover:text-white transition-all duration-300 rounded-r-lg">
-            <i class="fa-regular fa-eye fa-xs"></i>
-          </button>
-        </div>
-        <div class="">
-          <div class="">
-            <h3 class="text-xs mb-1 text-[#7E7E7E]">Hodo Foods</h3>
-            <h1 class="title text-sm md:pr-5 line-clamp-2">Seeds of Change Organic Quinoa, Brown, & Red Rice</h1>
-          </div>
 
-          <div class="flex items-center gap-3 my-2">
-            <div class="flex gap-1 items-center">
-              <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
-              <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
-              <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
-              <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
-              <i class="fa-solid fa-star fa-2xs" style="color: #CDCDCD;"></i>
+        <div class="hidden md:grid md:grid-cols-4 justify-between gap-8">
+
+
+          <div
+            class="swiper-slide group relative  overflow-hidden bg-white shadow-zinc-300 md:border md:border-1 border-[#E5E5E5] hover:border-[#BCE3C9] shadow-xl md:shadow-none flex flex-col justify-center items-center pt-10 px-4 pb-4">
+            <div class="absolute bg-[#FD6E6E] rounded-r-full pl-5 py-3 pr-3 top-0 md:top-5 -left-2">
+              <p class="text-white text-xs">Save 25%</p>
             </div>
-            <p class="text-sm text-[#7E7E7E]">(4.0)</p>
-          </div>
+            <div class="w-fit h-[100px] md:h-[144px] mx-auto mb-10">
+              <img class="w-full h-full object-cover" src="../src/images/our offers/khiar.jpg" alt="khiar">
+            </div>
+            <div
+              class="opacity-0 invisible transition-all group-hover:opacity-100 group-hover:visible flex flex-row text-xl md:text-2xl w-fit bg-white border-2 border-[#BCE3C9] absolute top-1/4 md:top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2  text-[#3BB77E] rounded-lg">
+              <button class="px-2 hover:bg-[#BCE3C9] hover:text-white transition-all duration-300 rounded-l-lg">
+                <i class="fa-regular fa-heart fa-xs"></i>
+              </button>
+              <button class="border-r border-l px-2 hover:bg-[#BCE3C9] hover:text-white transition-all duration-300">
+                <i class="fa-solid fa-shuffle fa-xs"></i>
+              </button>
+              <button class="px-2 hover:bg-[#BCE3C9] hover:text-white transition-all duration-300 rounded-r-lg">
+                <i class="fa-regular fa-eye fa-xs"></i>
+              </button>
+            </div>
 
-          <div class="mb-4">
-            <p class="text-xs text-[#7E7E7E]">500 gram</p>
-          </div>
+            <div class="">
+              <div class="">
+                <h3 class="text-xs mb-1 text-[#7E7E7E]">Hodo Foods</h3>
+                <h1 class="title text-sm md:pr-5 line-clamp-2">Seeds of Change Organic Quinoa, Brown, & Red Rice</h1>
+              </div>
 
-          <div class="flex justify-between items-center mb-4">
-            <div class="flex items-center gap-2">
-              <strong class="text-lg text-[#3BB77E] font-bold title">$2.51</strong>
-              <del class="text-xs title text-[#7E7E7E]">$2.80</del>
+              <div class="flex items-center gap-3 my-2">
+                <div class="flex gap-1 items-center">
+                  <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                  <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                  <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                  <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                  <i class="fa-solid fa-star fa-2xs" style="color: #CDCDCD;"></i>
+                </div>
+                <p class="text-sm text-[#7E7E7E]">(4.0)</p>
+              </div>
+
+              <div class="mb-4">
+                <p class="text-xs text-[#7E7E7E]">500 gram</p>
+              </div>
+
+              <div class="flex justify-between items-center mb-4">
+                <div class="flex items-center gap-2">
+                  <strong class="text-lg text-[#3BB77E] font-bold title">$2.51</strong>
+                  <del class="text-xs title text-[#7E7E7E]">$2.80</del>
+                </div>
+              </div>
+
+
+              <div class="mb-5">
+                <div class="w-full max-w-full h-2 bg-gray-200 rounded-full overflow-hidden mb-2">
+                  <div class="h-full rounded-full bg-[#3BB77E] w-[70%] transition-all duration-500"></div>
+                </div>
+                <p class="text-xs"><span class="title">Sold:</span> 90/120</p>
+              </div>
+
+
+              <a href="#"
+                class="text-center flex gap-2 items-center justify-center text-white focus:bg-[#FDC040] bg-[#3BB77E] transition-all duration-300 w-full p-4 rounded-lg">
+                <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+                <p>Add To Cart</p>
+              </a>
             </div>
           </div>
 
-         
-           <div class="mb-5">
-            <div class="w-full max-w-full h-2 bg-gray-200 rounded-full overflow-hidden mb-2">
-             <div class="h-full rounded-full bg-[#3BB77E] w-[70%] transition-all duration-500"></div>
+
+          <div
+            class="swiper-slide group relative  overflow-hidden bg-white shadow-zinc-300 md:border md:border-1 border-[#E5E5E5] hover:border-[#BCE3C9] shadow-xl md:shadow-none flex flex-col justify-center items-center pt-10 px-4 pb-4">
+            <div class="absolute bg-[#FD6E6E] rounded-r-full pl-5 py-3 pr-3 top-0 md:top-5 -left-2">
+              <p class="text-white text-xs">Save 25%</p>
             </div>
-            <p class="text-xs"><span class="title">Sold:</span> 90/120</p>
-           </div>
+            <div class="w-fit h-[100px] md:h-[144px] mx-auto mb-10">
+              <img class="w-full h-full object-cover" src="../src/images/our offers/humber.jpg" alt="humber">
+            </div>
+
+            <div
+              class="opacity-0 invisible transition-all group-hover:opacity-100 group-hover:visible flex flex-row text-xl md:text-2xl w-fit bg-white border-2 border-[#BCE3C9] absolute top-1/4 md:top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2  text-[#3BB77E] rounded-lg">
+              <button class="px-2 hover:bg-[#BCE3C9] hover:text-white transition-all duration-300 rounded-l-lg">
+                <i class="fa-regular fa-heart fa-xs"></i>
+              </button>
+              <button class="border-r border-l px-2 hover:bg-[#BCE3C9] hover:text-white transition-all duration-300">
+                <i class="fa-solid fa-shuffle fa-xs"></i>
+              </button>
+              <button class="px-2 hover:bg-[#BCE3C9] hover:text-white transition-all duration-300 rounded-r-lg">
+                <i class="fa-regular fa-eye fa-xs"></i>
+              </button>
+            </div>
+
+            <div class="">
+              <div class="">
+                <h3 class="text-xs mb-1 text-[#7E7E7E]">Hodo Foods</h3>
+                <h1 class="title text-sm md:pr-5 line-clamp-2">All Natural Italian-Style Chicken Meatballs</h1>
+              </div>
+
+              <div class="flex items-center gap-3 my-2">
+                <div class="flex gap-1 items-center">
+                  <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                  <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                  <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                  <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                  <i class="fa-solid fa-star fa-2xs" style="color: #CDCDCD;"></i>
+                </div>
+                <p class="text-sm text-[#7E7E7E]">(4.0)</p>
+              </div>
+
+              <div class="mb-4">
+                <p class="text-xs text-[#7E7E7E]">500 gram</p>
+              </div>
+
+              <div class="flex justify-between items-center mb-4">
+                <div class="flex items-center gap-2">
+                  <strong class="text-lg text-[#3BB77E] font-bold title">$2.51</strong>
+                  <del class="text-xs title text-[#7E7E7E]">$2.80</del>
+                </div>
+              </div>
 
 
-           <a href="#" class="text-center flex gap-2 items-center justify-center text-white focus:bg-[#FDC040] bg-[#3BB77E] transition-all duration-300 w-full p-4 rounded-lg">
-            <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
-            <p>Add To Cart</p>
-           </a>
+              <div class="mb-5">
+                <div class="w-full max-w-full h-2 bg-gray-200 rounded-full overflow-hidden mb-2">
+                  <div class="h-full rounded-full bg-[#3BB77E] w-[70%] transition-all duration-500"></div>
+                </div>
+                <p class="text-xs"><span class="title">Sold:</span> 90/120</p>
+              </div>
+
+
+              <a href="#"
+                class="text-center flex gap-2 items-center justify-center text-white focus:bg-[#FDC040] bg-[#3BB77E] transition-all duration-300 w-full p-4 rounded-lg">
+                <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+                <p>Add To Cart</p>
+              </a>
+            </div>
+          </div>
+
+          <div
+            class="swiper-slide group relative  overflow-hidden bg-white shadow-zinc-300 md:border md:border-1 border-[#E5E5E5] hover:border-[#BCE3C9] shadow-xl md:shadow-none flex flex-col justify-center items-center pt-10 px-4 pb-4">
+            <div class="absolute bg-[#FD6E6E] rounded-r-full pl-5 py-3 pr-3 top-0 md:top-5 -left-2">
+              <p class="text-white text-xs">Save 25%</p>
+            </div>
+            <div class="w-fit h-[100px] md:h-[144px] mx-auto mb-10">
+              <img class="w-full h-full object-cover" src="../src/images/our offers/pizza.jpg" alt="khiar">
+            </div>
+            <div
+              class="opacity-0 invisible transition-all group-hover:opacity-100 group-hover:visible flex flex-row text-xl md:text-2xl w-fit bg-white border-2 border-[#BCE3C9] absolute top-1/4 md:top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2  text-[#3BB77E] rounded-lg">
+              <button class="px-2 hover:bg-[#BCE3C9] hover:text-white transition-all duration-300 rounded-l-lg">
+                <i class="fa-regular fa-heart fa-xs"></i>
+              </button>
+              <button class="border-r border-l px-2 hover:bg-[#BCE3C9] hover:text-white transition-all duration-300">
+                <i class="fa-solid fa-shuffle fa-xs"></i>
+              </button>
+              <button class="px-2 hover:bg-[#BCE3C9] hover:text-white transition-all duration-300 rounded-r-lg">
+                <i class="fa-regular fa-eye fa-xs"></i>
+              </button>
+            </div>
+            <div class="">
+              <div class="">
+                <h3 class="text-xs mb-1 text-[#7E7E7E]">Hodo Foods</h3>
+                <h1 class="title text-sm md:pr-5 line-clamp-2">Angie’s Boomchickapop Sweet & Salty Kettle Corn</h1>
+              </div>
+
+              <div class="flex items-center gap-3 my-2">
+                <div class="flex gap-1 items-center">
+                  <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                  <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                  <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                  <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                  <i class="fa-solid fa-star fa-2xs" style="color: #CDCDCD;"></i>
+                </div>
+                <p class="text-sm text-[#7E7E7E]">(4.0)</p>
+              </div>
+
+              <div class="mb-4">
+                <p class="text-xs text-[#7E7E7E]">500 gram</p>
+              </div>
+
+              <div class="flex justify-between items-center mb-4">
+                <div class="flex items-center gap-2">
+                  <strong class="text-lg text-[#3BB77E] font-bold title">$2.51</strong>
+                  <del class="text-xs title text-[#7E7E7E]">$2.80</del>
+                </div>
+              </div>
+
+
+              <div class="mb-5">
+                <div class="w-full max-w-full h-2 bg-gray-200 rounded-full overflow-hidden mb-2">
+                  <div class="h-full rounded-full bg-[#3BB77E] w-[70%] transition-all duration-500"></div>
+                </div>
+                <p class="text-xs"><span class="title">Sold:</span> 90/120</p>
+              </div>
+
+
+              <a href="#"
+                class="text-center flex gap-2 items-center justify-center text-white focus:bg-[#FDC040] bg-[#3BB77E] transition-all duration-300 w-full p-4 rounded-lg">
+                <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+                <p>Add To Cart</p>
+              </a>
+            </div>
+
+          </div>
+
+          <div
+            class="swiper-slide group relative  overflow-hidden bg-white shadow-zinc-300 md:border md:border-1 border-[#E5E5E5] hover:border-[#BCE3C9] shadow-xl md:shadow-none flex flex-col justify-center items-center pt-10 px-4 pb-4">
+            <div class="absolute bg-[#FD6E6E] rounded-r-full pl-5 py-3 pr-3 top-0 md:top-5 -left-2">
+              <p class="text-white text-xs">Save 25%</p>
+            </div>
+            <div class="w-fit h-[100px] md:h-[144px] mx-auto mb-10">
+              <img class="w-full h-full object-cover" src="../src/images/our offers/kalam.png" alt="kalam">
+            </div>
+            <div
+              class="opacity-0 invisible transition-all group-hover:opacity-100 group-hover:visible flex flex-row text-xl md:text-2xl w-fit bg-white border-2 border-[#BCE3C9] absolute top-1/4 md:top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2  text-[#3BB77E] rounded-lg">
+              <button class="px-2 hover:bg-[#BCE3C9] hover:text-white transition-all duration-300 rounded-l-lg">
+                <i class="fa-regular fa-heart fa-xs"></i>
+              </button>
+              <button class="border-r border-l px-2 hover:bg-[#BCE3C9] hover:text-white transition-all duration-300">
+                <i class="fa-solid fa-shuffle fa-xs"></i>
+              </button>
+              <button class="px-2 hover:bg-[#BCE3C9] hover:text-white transition-all duration-300 rounded-r-lg">
+                <i class="fa-regular fa-eye fa-xs"></i>
+              </button>
+            </div>
+            <div class="">
+              <div class="">
+                <h3 class="text-xs mb-1 text-[#7E7E7E]">Hodo Foods</h3>
+                <h1 class="title text-sm md:pr-5 line-clamp-2">Foster Farms Takeout Crispy Classic Buffalo Wings</h1>
+              </div>
+
+              <div class="flex items-center gap-3 my-2">
+                <div class="flex gap-1 items-center">
+                  <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                  <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                  <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                  <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                  <i class="fa-solid fa-star fa-2xs" style="color: #CDCDCD;"></i>
+                </div>
+                <p class="text-sm text-[#7E7E7E]">(4.0)</p>
+              </div>
+
+              <div class="mb-4">
+                <p class="text-xs text-[#7E7E7E]">500 gram</p>
+              </div>
+
+              <div class="flex justify-between items-center mb-4">
+                <div class="flex items-center gap-2">
+                  <strong class="text-lg text-[#3BB77E] font-bold title">$2.51</strong>
+                  <del class="text-xs title text-[#7E7E7E]">$2.80</del>
+                </div>
+              </div>
+
+
+              <div class="mb-5">
+                <div class="w-full max-w-full h-2 bg-gray-200 rounded-full overflow-hidden mb-2">
+                  <div class="h-full rounded-full bg-[#3BB77E] w-[70%] transition-all duration-500"></div>
+                </div>
+                <p class="text-xs"><span class="title">Sold:</span> 90/120</p>
+              </div>
+
+
+              <a href="#"
+                class="text-center flex gap-2 items-center justify-center text-white focus:bg-[#FDC040] bg-[#3BB77E] transition-all duration-300 w-full p-4 rounded-lg">
+                <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+                <p>Add To Cart</p>
+              </a>
+            </div>
+          </div>
+
         </div>
       </div>
 
-      <div
-        class="swiper-slide group relative  overflow-hidden bg-white shadow-zinc-300 border border-1 border-[#E5E5E5] hover:border-[#BCE3C9] flex flex-col justify-center items-center pt-10 px-4 pb-4">
-        <div class="absolute bg-[#FD6E6E] rounded-r-full pl-5 py-3 pr-3 top-0 md:top-5 -left-2">
-          <p class="text-white text-xs">Save 25%</p>
+    </div>
+
+
+
+  </section>
+
+
+  <!-- Deals Of The Days -->
+
+  <section class="md:c-container md:py-20">
+
+    <div class="flex justify-between items-center md:mb-20  mx-5 md:mx-0 mb-10">
+      <h1 class="md:text-3xl text-xl title text-[#253D4E] ">Our-offers</h1>
+      <span class="md:hidden"><i class="fa-solid fa-angle-right fa-lg" style="color: #7E7E7E;"></i></span>
+    </div>
+
+
+    <div class="hidden md:grid grid-cols-4 justify-center gap-5 ">
+
+      <div class="swiper-slide relative !w-[378px]">
+
+        <div class="w-[378px] h-[335px] rounded-2xl">
+          <img class="w-full h-full object-contain rounded-3xl" src="../src/images/Deals of the days/sabzi.jpg"
+            alt="sbazi">
         </div>
-        <div class="w-fit h-[100px] md:h-[144px] mx-auto mb-10">
-          <img class="w-full h-full object-cover" src="../src/images/our offers/khiar.jpg" alt="khiar">
-        </div>
-        <div
-          class="opacity-0 invisible transition-all group-hover:opacity-100 group-hover:visible flex flex-row text-xl md:text-2xl w-fit bg-white border-2 border-[#BCE3C9] absolute top-1/4 md:top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2  text-[#3BB77E] rounded-lg">
-          <button class="px-2 hover:bg-[#BCE3C9] hover:text-white transition-all duration-300 rounded-l-lg">
-            <i class="fa-regular fa-heart fa-xs"></i>
-          </button>
-          <button class="border-r border-l px-2 hover:bg-[#BCE3C9] hover:text-white transition-all duration-300">
-            <i class="fa-solid fa-shuffle fa-xs"></i>
-          </button>
-          <button class="px-2 hover:bg-[#BCE3C9] hover:text-white transition-all duration-300 rounded-r-lg">
-            <i class="fa-regular fa-eye fa-xs"></i>
-          </button>
-        </div>
-        <div class="">
-          <div class="">
-            <h3 class="text-xs mb-1 text-[#7E7E7E]">Hodo Foods</h3>
-            <h1 class="title text-sm md:pr-5 line-clamp-2">Seeds of Change Organic Quinoa, Brown, & Red Rice</h1>
-          </div>
 
-          <div class="flex items-center gap-3 my-2">
-            <div class="flex gap-1 items-center">
-              <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
-              <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
-              <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
-              <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
-              <i class="fa-solid fa-star fa-2xs" style="color: #CDCDCD;"></i>
+
+        <div class="absolute top-2/3 w-full  left-0">
+          <div class="grid grid-cols-4 gap-5 justify-evenly items-center mx-8 mb-2">
+
+            <div class="bg-white text-center px-3 py-1 rounded-md shadow-lg">
+              <h2 class="text-[#3BB77E] text-2xl title">05</h2>
+              <h3 class="text-[#7E7E7E] text-md">Days</h3>
             </div>
-            <p class="text-sm text-[#7E7E7E]">(4.0)</p>
+
+            <div class="bg-white text-center px-3 py-1 rounded-md shadow-lg">
+              <h2 class="text-[#3BB77E] text-2xl title">06</h2>
+              <h3 class="text-[#7E7E7E] text-md">Hours</h3>
+            </div>
+
+            <div class="bg-white text-center px-3 py-1 rounded-md shadow-lg">
+              <h2 class="text-[#3BB77E] text-2xl title">56</h2>
+              <h3 class="text-[#7E7E7E] text-md">Mins</h3>
+            </div>
+
+            <div class="bg-white text-center px-3 py-1 rounded-md shadow-lg">
+              <h2 class="text-[#3BB77E] text-2xl title">18</h2>
+              <h3 class="text-[#7E7E7E] text-md">Sec</h3>
+            </div>
+
           </div>
 
-          <div class="mb-4">
-            <p class="text-xs text-[#7E7E7E]">500 gram</p>
-          </div>
+          <div class="bg-white p-5 rounded-2xl shadow-xl w-11/12 mx-auto">
+            <div class="">
+              <div class="">
+                <h1 class="title text-[#253D4E]  md:pr-5 line-clamp-2">Seeds of Change Organic Quinoa,
+                  Brown, & Red Rice</h1>
+              </div>
 
-          <div class="flex justify-between items-center mb-4">
-            <div class="flex items-center gap-2">
-              <strong class="text-lg text-[#3BB77E] font-bold title">$2.51</strong>
-              <del class="text-xs title text-[#7E7E7E]">$2.80</del>
+              <div class="flex items-center gap-3 my-2">
+                <div class="flex gap-1 items-center">
+                  <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                  <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                  <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                  <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                  <i class="fa-solid fa-star fa-2xs" style="color: #CDCDCD;"></i>
+                </div>
+                <p class="text-sm text-[#7E7E7E]">(4.0)</p>
+              </div>
+
+              <div class="mb-2">
+                <p class="text-xs text-[#7E7E7E]">500 gram</p>
+              </div>
+              <div class="flex justify-between items-center">
+                <div class="flex items-center gap-2">
+                  <strong class="text-lg text-[#3BB77E] font-bold title">$2.51</strong>
+                  <del class="text-xs title text-[#7E7E7E]">$2.80</del>
+                </div>
+
+                <button class="flex justify-between gap-2 items-center bg-[#DEF9EC] px-3 py-1 rounded-lg">
+                  <p class="text-[#3BB77E] md:block hidden title text-xs">Add</p>
+                  <p class="text-[#3BB77E] title">+</p>
+                </button>
+              </div>
             </div>
           </div>
-
-         
-           <div class="mb-5">
-            <div class="w-full max-w-full h-2 bg-gray-200 rounded-full overflow-hidden mb-2">
-             <div class="h-full rounded-full bg-[#3BB77E] w-[70%] transition-all duration-500"></div>
-            </div>
-            <p class="text-xs"><span class="title">Sold:</span> 90/120</p>
-           </div>
-
-
-           <a href="#" class="text-center flex gap-2 items-center justify-center text-white focus:bg-[#FDC040] bg-[#3BB77E] transition-all duration-300 w-full p-4 rounded-lg">
-            <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
-            <p>Add To Cart</p>
-           </a>
         </div>
       </div>
-      <div
-        class="swiper-slide group relative  overflow-hidden bg-white shadow-zinc-300 border border-1 border-[#E5E5E5] hover:border-[#BCE3C9] flex flex-col justify-center items-center pt-10 px-4 pb-4">
-        <div class="absolute bg-[#FD6E6E] rounded-r-full pl-5 py-3 pr-3 top-0 md:top-5 -left-2">
-          <p class="text-white text-xs">Save 25%</p>
+
+      <div class="swiper-slide relative !w-[378px]">
+
+        <div class="w-[378px] h-[335px] rounded-2xl">
+          <img class="w-full h-full object-contain rounded-3xl" src="../src/images/Deals of the days/orange.jpg"
+            alt="orange">
         </div>
-        <div class="w-fit h-[100px] md:h-[144px] mx-auto mb-10">
-          <img class="w-full h-full object-cover" src="../src/images/our offers/khiar.jpg" alt="khiar">
-        </div>
-        <div
-          class="opacity-0 invisible transition-all group-hover:opacity-100 group-hover:visible flex flex-row text-xl md:text-2xl w-fit bg-white border-2 border-[#BCE3C9] absolute top-1/4 md:top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2  text-[#3BB77E] rounded-lg">
-          <button class="px-2 hover:bg-[#BCE3C9] hover:text-white transition-all duration-300 rounded-l-lg">
-            <i class="fa-regular fa-heart fa-xs"></i>
-          </button>
-          <button class="border-r border-l px-2 hover:bg-[#BCE3C9] hover:text-white transition-all duration-300">
-            <i class="fa-solid fa-shuffle fa-xs"></i>
-          </button>
-          <button class="px-2 hover:bg-[#BCE3C9] hover:text-white transition-all duration-300 rounded-r-lg">
-            <i class="fa-regular fa-eye fa-xs"></i>
-          </button>
-        </div>
-        <div class="">
-          <div class="">
-            <h3 class="text-xs mb-1 text-[#7E7E7E]">Hodo Foods</h3>
-            <h1 class="title text-sm md:pr-5 line-clamp-2">Seeds of Change Organic Quinoa, Brown, & Red Rice</h1>
-          </div>
 
-          <div class="flex items-center gap-3 my-2">
-            <div class="flex gap-1 items-center">
-              <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
-              <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
-              <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
-              <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
-              <i class="fa-solid fa-star fa-2xs" style="color: #CDCDCD;"></i>
+
+        <div class="absolute top-2/3 w-full  left-0">
+          <div class="grid grid-cols-4 gap-5 justify-evenly items-center mx-5 mb-2">
+
+            <div class="bg-white text-center px-3 py-1 rounded-md shadow-lg">
+              <h2 class="text-[#3BB77E] text-2xl title">05</h2>
+              <h3 class="text-[#7E7E7E] text-md">Days</h3>
             </div>
-            <p class="text-sm text-[#7E7E7E]">(4.0)</p>
+
+            <div class="bg-white text-center px-3 py-1 rounded-md shadow-lg">
+              <h2 class="text-[#3BB77E] text-2xl title">06</h2>
+              <h3 class="text-[#7E7E7E] text-md">Hours</h3>
+            </div>
+
+            <div class="bg-white text-center px-3 py-1 rounded-md shadow-lg">
+              <h2 class="text-[#3BB77E] text-2xl title">56</h2>
+              <h3 class="text-[#7E7E7E] text-md">Mins</h3>
+            </div>
+
+            <div class="bg-white text-center px-3 py-1 rounded-md shadow-lg">
+              <h2 class="text-[#3BB77E] text-2xl title">18</h2>
+              <h3 class="text-[#7E7E7E] text-md">Sec</h3>
+            </div>
+
           </div>
 
-          <div class="mb-4">
-            <p class="text-xs text-[#7E7E7E]">500 gram</p>
-          </div>
+          <div class="bg-white p-5 rounded-2xl shadow-xl w-11/12 mx-auto">
+            <div class="">
+              <div class="">
+                <h1 class="title text-[#253D4E]  md:pr-5 line-clamp-2">Perdue Simply Smart Organics Gluten
+                  Free Breaded</h1>
+              </div>
 
-          <div class="flex justify-between items-center mb-4">
-            <div class="flex items-center gap-2">
-              <strong class="text-lg text-[#3BB77E] font-bold title">$2.51</strong>
-              <del class="text-xs title text-[#7E7E7E]">$2.80</del>
+              <div class="flex items-center gap-3 my-2">
+                <div class="flex gap-1 items-center">
+                  <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                  <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                  <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                  <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                  <i class="fa-solid fa-star fa-2xs" style="color: #CDCDCD;"></i>
+                </div>
+                <p class="text-sm text-[#7E7E7E]">(4.0)</p>
+              </div>
+
+              <div class="mb-2">
+                <p class="text-xs text-[#7E7E7E]">500 gram</p>
+              </div>
+              <div class="flex justify-between items-center">
+                <div class="flex items-center gap-2">
+                  <strong class="text-lg text-[#3BB77E] font-bold title">$2.51</strong>
+                  <del class="text-xs title text-[#7E7E7E]">$2.80</del>
+                </div>
+
+                <button class="flex justify-between gap-2 items-center bg-[#DEF9EC] px-3 py-1 rounded-lg">
+                  <p class="text-[#3BB77E] md:block hidden title text-xs">Add</p>
+                  <p class="text-[#3BB77E] title">+</p>
+                </button>
+              </div>
             </div>
           </div>
-
-         
-           <div class="mb-5">
-            <div class="w-full max-w-full h-2 bg-gray-200 rounded-full overflow-hidden mb-2">
-             <div class="h-full rounded-full bg-[#3BB77E] w-[70%] transition-all duration-500"></div>
-            </div>
-            <p class="text-xs"><span class="title">Sold:</span> 90/120</p>
-           </div>
-
-
-           <a href="#" class="text-center flex gap-2 items-center justify-center text-white focus:bg-[#FDC040] bg-[#3BB77E] transition-all duration-300 w-full p-4 rounded-lg">
-            <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
-            <p>Add To Cart</p>
-           </a>
         </div>
       </div>
-      <div
-        class="swiper-slide group relative  overflow-hidden bg-white shadow-zinc-300 border border-1 border-[#E5E5E5] hover:border-[#BCE3C9] flex flex-col justify-center items-center pt-10 px-4 pb-4">
-        <div class="absolute bg-[#FD6E6E] rounded-r-full pl-5 py-3 pr-3 top-0 md:top-5 -left-2">
-          <p class="text-white text-xs">Save 25%</p>
+
+      <div class="swiper-slide relative !w-[378px]">
+
+        <div class="w-[378px] h-[335px] rounded-2xl">
+          <img class="w-full h-full object-contain rounded-3xl" src="../src/images/Deals of the days/nokhod.jpg"
+            alt="nokhod">
         </div>
-        <div class="w-fit h-[100px] md:h-[144px] mx-auto mb-10">
-          <img class="w-full h-full object-cover" src="../src/images/our offers/khiar.jpg" alt="khiar">
+
+
+        <div class="absolute top-2/3 w-full  left-0">
+          <div class="grid grid-cols-4 gap-5 justify-evenly items-center mx-5 mb-2">
+
+            <div class="bg-white text-center px-3 py-1 rounded-md shadow-lg">
+              <h2 class="text-[#3BB77E] text-2xl title">05</h2>
+              <h3 class="text-[#7E7E7E] text-md">Days</h3>
+            </div>
+
+            <div class="bg-white text-center px-3 py-1 rounded-md shadow-lg">
+              <h2 class="text-[#3BB77E] text-2xl title">06</h2>
+              <h3 class="text-[#7E7E7E] text-md">Hours</h3>
+            </div>
+
+            <div class="bg-white text-center px-3 py-1 rounded-md shadow-lg">
+              <h2 class="text-[#3BB77E] text-2xl title">56</h2>
+              <h3 class="text-[#7E7E7E] text-md">Mins</h3>
+            </div>
+
+            <div class="bg-white text-center px-3 py-1 rounded-md shadow-lg">
+              <h2 class="text-[#3BB77E] text-2xl title">18</h2>
+              <h3 class="text-[#7E7E7E] text-md">Sec</h3>
+            </div>
+
+          </div>
+
+          <div class="bg-white p-5 rounded-2xl shadow-xl w-11/12 mx-auto">
+            <div class="">
+              <div class="">
+                <h1 class="title text-[#253D4E]  md:pr-5 line-clamp-2">Signature Wood-Fired Mushroom and
+                  Caramelized Red Onion</h1>
+              </div>
+
+              <div class="flex items-center gap-3 my-2">
+                <div class="flex gap-1 items-center">
+                  <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                  <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                  <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                  <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                  <i class="fa-solid fa-star fa-2xs" style="color: #CDCDCD;"></i>
+                </div>
+                <p class="text-sm text-[#7E7E7E]">(4.0)</p>
+              </div>
+
+              <div class="mb-2">
+                <p class="text-xs text-[#7E7E7E]">500 gram</p>
+              </div>
+              <div class="flex justify-between items-center">
+                <div class="flex items-center gap-2">
+                  <strong class="text-lg text-[#3BB77E] font-bold title">$2.51</strong>
+                  <del class="text-xs title text-[#7E7E7E]">$2.80</del>
+                </div>
+
+                <button class="flex justify-between gap-2 items-center bg-[#DEF9EC] px-3 py-1 rounded-lg">
+                  <p class="text-[#3BB77E] md:block hidden title text-xs">Add</p>
+                  <p class="text-[#3BB77E] title">+</p>
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
-        <div
-          class="opacity-0 invisible transition-all group-hover:opacity-100 group-hover:visible flex flex-row text-xl md:text-2xl w-fit bg-white border-2 border-[#BCE3C9] absolute top-1/4 md:top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2  text-[#3BB77E] rounded-lg">
-          <button class="px-2 hover:bg-[#BCE3C9] hover:text-white transition-all duration-300 rounded-l-lg">
-            <i class="fa-regular fa-heart fa-xs"></i>
-          </button>
-          <button class="border-r border-l px-2 hover:bg-[#BCE3C9] hover:text-white transition-all duration-300">
-            <i class="fa-solid fa-shuffle fa-xs"></i>
-          </button>
-          <button class="px-2 hover:bg-[#BCE3C9] hover:text-white transition-all duration-300 rounded-r-lg">
-            <i class="fa-regular fa-eye fa-xs"></i>
-          </button>
+      </div>
+
+      <div class="swiper-slide relative !w-[378px]">
+
+        <div class="w-[378px] h-[335px] rounded-2xl">
+          <img class="w-full h-full object-contain rounded-3xl" src="../src/images/Deals of the days/orange2.jpg"
+            alt="sbazi">
         </div>
-        <div class="">
-          <div class="">
-            <h3 class="text-xs mb-1 text-[#7E7E7E]">Hodo Foods</h3>
-            <h1 class="title text-sm md:pr-5 line-clamp-2">Seeds of Change Organic Quinoa, Brown, & Red Rice</h1>
-          </div>
 
-          <div class="flex items-center gap-3 my-2">
-            <div class="flex gap-1 items-center">
-              <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
-              <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
-              <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
-              <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
-              <i class="fa-solid fa-star fa-2xs" style="color: #CDCDCD;"></i>
+
+        <div class="absolute top-2/3 w-full  left-0">
+          <div class="grid grid-cols-4 gap-5 justify-evenly items-center mx-5 mb-2">
+
+            <div class="bg-white text-center px-3 py-1 rounded-md shadow-lg">
+              <h2 class="text-[#3BB77E] text-2xl title">05</h2>
+              <h3 class="text-[#7E7E7E] text-md">Days</h3>
             </div>
-            <p class="text-sm text-[#7E7E7E]">(4.0)</p>
+
+            <div class="bg-white text-center px-3 py-1 rounded-md shadow-lg">
+              <h2 class="text-[#3BB77E] text-2xl title">06</h2>
+              <h3 class="text-[#7E7E7E] text-md">Hours</h3>
+            </div>
+
+            <div class="bg-white text-center px-3 py-1 rounded-md shadow-lg">
+              <h2 class="text-[#3BB77E] text-2xl title">56</h2>
+              <h3 class="text-[#7E7E7E] text-md">Mins</h3>
+            </div>
+
+            <div class="bg-white text-center px-3 py-1 rounded-md shadow-lg">
+              <h2 class="text-[#3BB77E] text-2xl title">18</h2>
+              <h3 class="text-[#7E7E7E] text-md">Sec</h3>
+            </div>
+
           </div>
 
-          <div class="mb-4">
-            <p class="text-xs text-[#7E7E7E]">500 gram</p>
-          </div>
+          <div class="bg-white p-5 rounded-2xl shadow-xl w-11/12 mx-auto">
+            <div class="">
+              <div class="">
+                <h1 class="title text-[#253D4E]  md:pr-5 line-clamp-2">Simply Lemonade with Raspberry Juice
+                </h1>
+              </div>
 
-          <div class="flex justify-between items-center mb-4">
-            <div class="flex items-center gap-2">
-              <strong class="text-lg text-[#3BB77E] font-bold title">$2.51</strong>
-              <del class="text-xs title text-[#7E7E7E]">$2.80</del>
+              <div class="flex items-center gap-3 my-2">
+                <div class="flex gap-1 items-center">
+                  <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                  <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                  <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                  <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                  <i class="fa-solid fa-star fa-2xs" style="color: #CDCDCD;"></i>
+                </div>
+                <p class="text-sm text-[#7E7E7E]">(4.0)</p>
+              </div>
+
+              <div class="mb-2">
+                <p class="text-xs text-[#7E7E7E]">500 gram</p>
+              </div>
+              <div class="flex justify-between items-center">
+                <div class="flex items-center gap-2">
+                  <strong class="text-lg text-[#3BB77E] font-bold title">$2.51</strong>
+                  <del class="text-xs title text-[#7E7E7E]">$2.80</del>
+                </div>
+
+                <button class="flex justify-between gap-2 items-center bg-[#DEF9EC] px-3 py-1 rounded-lg">
+                  <p class="text-[#3BB77E] md:block hidden title text-xs">Add</p>
+                  <p class="text-[#3BB77E] title">+</p>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="md:hidden block ">
+      <div class="swiper mySwiper4">
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide relative ">
+
+            <div class="w-[342px] h-[200px] rounded-2xl mx-auto">
+              <img class="w-full h-full object-contain rounded-3xl" src="../src/images/Deals of the days/sabzi.jpg"
+                alt="sbazi">
+            </div>
+
+
+            <div class="absolute top-1/2 w-full  left-1/2 -translate-x-1/2">
+              <div class="grid grid-cols-4 gap-5 justify-center items-center mx-12 mb-2">
+
+                <div class="bg-white text-center px-3 py-1 rounded-md shadow-lg">
+                  <h2 class="text-[#3BB77E] text-xl title">05</h2>
+                  <h3 class="text-[#7E7E7E] text-sm">Days</h3>
+                </div>
+
+                <div class="bg-white text-center px-3 py-1 rounded-md shadow-lg">
+                  <h2 class="text-[#3BB77E] text-xl title">06</h2>
+                  <h3 class="text-[#7E7E7E] text-sm">Hours</h3>
+                </div>
+
+                <div class="bg-white text-center px-3 py-1 rounded-md shadow-lg">
+                  <h2 class="text-[#3BB77E] text-xl title">56</h2>
+                  <h3 class="text-[#7E7E7E] text-sm">Mins</h3>
+                </div>
+
+                <div class="bg-white text-center px-3 py-1 rounded-md shadow-lg">
+                  <h2 class="text-[#3BB77E] text-xl title">18</h2>
+                  <h3 class="text-[#7E7E7E] text-sm">Sec</h3>
+                </div>
+
+              </div>
+
+              <div class="bg-white p-5 rounded-2xl shadow-xl w-10/12 mx-auto">
+                <div class="">
+                  <div class="">
+                    <h1 class="title text-[#253D4E]  md:pr-5 line-clamp-2">Seeds of Change Organic Quinoa,
+                      Brown, & Red Rice</h1>
+                  </div>
+
+                  <div class="flex items-center gap-3 my-2">
+                    <div class="flex gap-1 items-center">
+                      <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                      <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                      <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                      <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                      <i class="fa-solid fa-star fa-2xs" style="color: #CDCDCD;"></i>
+                    </div>
+                    <p class="text-sm text-[#7E7E7E]">(4.0)</p>
+                  </div>
+
+                  <div class="mb-2">
+                    <p class="text-xs text-[#7E7E7E]">500 gram</p>
+                  </div>
+                  <div class="flex justify-between items-center">
+                    <div class="flex items-center gap-2">
+                      <strong class="text-lg text-[#3BB77E] font-bold title">$2.51</strong>
+                      <del class="text-xs title text-[#7E7E7E]">$2.80</del>
+                    </div>
+
+                    <button class="flex justify-between gap-2 items-center bg-[#DEF9EC] px-3 py-1 rounded-lg">
+                      <p class="text-[#3BB77E] md:block hidden title text-xs">Add</p>
+                      <p class="text-[#3BB77E] title">+</p>
+                    </button>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
-         
-           <div class="mb-5">
-            <div class="w-full max-w-full h-2 bg-gray-200 rounded-full overflow-hidden mb-2">
-             <div class="h-full rounded-full bg-[#3BB77E] w-[70%] transition-all duration-500"></div>
+          <div class="swiper-slide relative ">
+
+            <div class="w-[342px] h-[200px] rounded-2xl mx-auto">
+              <img class="w-full h-full object-contain rounded-3xl" src="../src/images/Deals of the days/orange.jpg"
+                alt="orange">
             </div>
-            <p class="text-xs"><span class="title">Sold:</span> 90/120</p>
-           </div>
 
 
-           <a href="#" class="text-center flex gap-2 items-center justify-center text-white focus:bg-[#FDC040] bg-[#3BB77E] transition-all duration-300 w-full p-4 rounded-lg">
-            <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
-            <p>Add To Cart</p>
-           </a>
+            <div class="absolute top-1/2 w-full  left-0">
+              <div class="grid grid-cols-4 gap-5 justify-evenly items-center mx-12 mb-2">
+
+                <div class="bg-white text-center px-3 py-1 rounded-md shadow-lg">
+                  <h2 class="text-[#3BB77E] text-xl title">05</h2>
+                  <h3 class="text-[#7E7E7E] text-sm">Days</h3>
+                </div>
+
+                <div class="bg-white text-center px-3 py-1 rounded-md shadow-lg">
+                  <h2 class="text-[#3BB77E] text-xl title">06</h2>
+                  <h3 class="text-[#7E7E7E] text-sm">Hours</h3>
+                </div>
+
+                <div class="bg-white text-center px-3 py-1 rounded-md shadow-lg">
+                  <h2 class="text-[#3BB77E] text-xl title">56</h2>
+                  <h3 class="text-[#7E7E7E] text-sm">Mins</h3>
+                </div>
+
+                <div class="bg-white text-center px-3 py-1 rounded-md shadow-lg">
+                  <h2 class="text-[#3BB77E] text-xl title">18</h2>
+                  <h3 class="text-[#7E7E7E] text-sm">Sec</h3>
+                </div>
+
+              </div>
+
+              <div class="bg-white p-5 rounded-2xl shadow-xl w-10/12 mx-auto">
+                <div class="">
+                  <div class="">
+                    <h1 class="title text-[#253D4E]  md:pr-5 line-clamp-2">Perdue Simply Smart Organics Gluten
+                      Free Breaded</h1>
+                  </div>
+
+                  <div class="flex items-center gap-3 my-2">
+                    <div class="flex gap-1 items-center">
+                      <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                      <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                      <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                      <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                      <i class="fa-solid fa-star fa-2xs" style="color: #CDCDCD;"></i>
+                    </div>
+                    <p class="text-sm text-[#7E7E7E]">(4.0)</p>
+                  </div>
+
+                  <div class="mb-2">
+                    <p class="text-xs text-[#7E7E7E]">500 gram</p>
+                  </div>
+                  <div class="flex justify-between items-center">
+                    <div class="flex items-center gap-2">
+                      <strong class="text-lg text-[#3BB77E] font-bold title">$2.51</strong>
+                      <del class="text-xs title text-[#7E7E7E]">$2.80</del>
+                    </div>
+
+                    <button class="flex justify-between gap-2 items-center bg-[#DEF9EC] px-3 py-1 rounded-lg">
+                      <p class="text-[#3BB77E] md:block hidden title text-xs">Add</p>
+                      <p class="text-[#3BB77E] title">+</p>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide relative ">
+
+            <div class="w-[342px] h-[200px] rounded-2xl mx-auto">
+              <img class="w-full h-full object-contain rounded-3xl" src="../src/images/Deals of the days/nokhod.jpg"
+                alt="nokhod">
+            </div>
+
+
+            <div class="absolute top-1/2 w-full  left-0">
+              <div class="grid grid-cols-4 gap-5 justify-evenly items-center mx-12 mb-2">
+
+                <div class="bg-white text-center px-3 py-1 rounded-md shadow-lg">
+                  <h2 class="text-[#3BB77E] text-xl title">05</h2>
+                  <h3 class="text-[#7E7E7E] text-sm">Days</h3>
+                </div>
+
+                <div class="bg-white text-center px-3 py-1 rounded-md shadow-lg">
+                  <h2 class="text-[#3BB77E] text-xl title">06</h2>
+                  <h3 class="text-[#7E7E7E] text-sm">Hours</h3>
+                </div>
+
+                <div class="bg-white text-center px-3 py-1 rounded-md shadow-lg">
+                  <h2 class="text-[#3BB77E] text-xl title">56</h2>
+                  <h3 class="text-[#7E7E7E] text-sm">Mins</h3>
+                </div>
+
+                <div class="bg-white text-center px-3 py-1 rounded-md shadow-lg">
+                  <h2 class="text-[#3BB77E] text-xl title">18</h2>
+                  <h3 class="text-[#7E7E7E] text-sm">Sec</h3>
+                </div>
+
+              </div>
+
+              <div class="bg-white p-5 rounded-2xl shadow-xl w-10/12 mx-auto">
+                <div class="">
+                  <div class="">
+                    <h1 class="title text-[#253D4E]  md:pr-5 line-clamp-2">Signature Wood-Fired Mushroom and
+                      Caramelized Red Onion</h1>
+                  </div>
+
+                  <div class="flex items-center gap-3 my-2">
+                    <div class="flex gap-1 items-center">
+                      <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                      <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                      <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                      <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                      <i class="fa-solid fa-star fa-2xs" style="color: #CDCDCD;"></i>
+                    </div>
+                    <p class="text-sm text-[#7E7E7E]">(4.0)</p>
+                  </div>
+
+                  <div class="mb-2">
+                    <p class="text-xs text-[#7E7E7E]">500 gram</p>
+                  </div>
+                  <div class="flex justify-between items-center">
+                    <div class="flex items-center gap-2">
+                      <strong class="text-lg text-[#3BB77E] font-bold title">$2.51</strong>
+                      <del class="text-xs title text-[#7E7E7E]">$2.80</del>
+                    </div>
+
+                    <button class="flex justify-between gap-2 items-center bg-[#DEF9EC] px-3 py-1 rounded-lg">
+                      <p class="text-[#3BB77E] md:block hidden title text-xs">Add</p>
+                      <p class="text-[#3BB77E] title">+</p>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide relative ">
+
+            <div class="w-[342px] h-[200px] rounded-2xl mx-auto">
+              <img class="w-full h-full object-cover rounded-3xl" src="../src/images/Deals of the days/orange2.jpg"
+                alt="sbazi">
+            </div>
+
+
+            <div class="absolute top-1/2 w-full  left-0">
+              <div class="grid grid-cols-4 gap-5 justify-evenly items-center mx-12 mb-2">
+
+                <div class="bg-white text-center px-3 py-1 rounded-md shadow-lg">
+                  <h2 class="text-[#3BB77E] text-xl title">05</h2>
+                  <h3 class="text-[#7E7E7E] text-sm">Days</h3>
+                </div>
+
+                <div class="bg-white text-center px-3 py-1 rounded-md shadow-lg">
+                  <h2 class="text-[#3BB77E] text-xl title">06</h2>
+                  <h3 class="text-[#7E7E7E] text-sm">Hours</h3>
+                </div>
+
+                <div class="bg-white text-center px-3 py-1 rounded-md shadow-lg">
+                  <h2 class="text-[#3BB77E] text-xl title">56</h2>
+                  <h3 class="text-[#7E7E7E] text-sm">Mins</h3>
+                </div>
+
+                <div class="bg-white text-center px-3 py-1 rounded-md shadow-lg">
+                  <h2 class="text-[#3BB77E] text-xl title">18</h2>
+                  <h3 class="text-[#7E7E7E] text-sm">Sec</h3>
+                </div>
+
+              </div>
+
+              <div class="bg-white p-5 rounded-2xl shadow-xl w-10/12 mx-auto">
+                <div class="">
+                  <div class="">
+                    <h1 class="title text-[#253D4E]  md:pr-5 line-clamp-2">Simply Lemonade with Raspberry Juice
+                    </h1>
+                  </div>
+
+                  <div class="flex items-center gap-3 my-2">
+                    <div class="flex gap-1 items-center">
+                      <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                      <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                      <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                      <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                      <i class="fa-solid fa-star fa-2xs" style="color: #CDCDCD;"></i>
+                    </div>
+                    <p class="text-sm text-[#7E7E7E]">(4.0)</p>
+                  </div>
+
+                  <div class="mb-2">
+                    <p class="text-xs text-[#7E7E7E]">500 gram</p>
+                  </div>
+                  <div class="flex justify-between items-center">
+                    <div class="flex items-center gap-2">
+                      <strong class="text-lg text-[#3BB77E] font-bold title">$2.51</strong>
+                      <del class="text-xs title text-[#7E7E7E]">$2.80</del>
+                    </div>
+
+                    <button class="flex justify-between gap-2 items-center bg-[#DEF9EC] px-3 py-1 rounded-lg">
+                      <p class="text-[#3BB77E] md:block hidden title text-xs">Add</p>
+                      <p class="text-[#3BB77E] title">+</p>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
         </div>
       </div>
     </div>
-
-      </div>
-
-  </div>
 
 
 
@@ -1781,22 +2670,1013 @@
 
 
 
+  <!-- top selling and more -->
+
+  <section class="md:c-container md:mt-40 mt-10 pb-20">
+    <div class="hidden md:grid grid-cols-4 gap-4 items-center">
+
+
+      <div class="flex flex-col gap-6">
+        <p class="text-[#253D4E] text-2xl title mb-6">Top Selling</p>
+
+
+        <div class="flex gap-5 w-full">
+          <div
+            class="!w-[120px] !h-[120px] overflow-hidden bg-[#f7f7f7] rounded-xl flex items-center justify-center mx-auto">
+            <img class="w-[140px] h-[140px] object-contain rounded-xl"
+              src="../src/images/top sellinng and more/avakado.png" alt="avakado">
+          </div>
+
+          <div class="w-2/3">
+            <h1 class="title text-[#253D4E] line-clamp-2">
+              Nestle Original Coffee-Mate Coffee Creamer
+            </h1>
+
+            <div class="flex items-center gap-3 my-2">
+              <div class="flex gap-1 items-center">
+                <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star fa-2xs" style="color: #CDCDCD;"></i>
+              </div>
+              <p class="text-sm text-[#7E7E7E]">(4.0)</p>
+            </div>
+
+            <div class="flex justify-between items-center">
+              <div class="flex items-center gap-2">
+                <strong class="text-lg text-[#3BB77E] font-bold title">$2.51</strong>
+                <del class="text-xs title text-[#7E7E7E]">$2.80</del>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="flex gap-5 w-full">
+          <div
+            class="!w-[120px] !h-[120px] overflow-hidden bg-[#f7f7f7] rounded-xl flex items-center justify-center mx-auto">
+            <img class="w-[140px] h-[140px] object-contain rounded-xl"
+              src="../src/images/top sellinng and more/benana.png" alt="banana">
+          </div>
+
+          <div class="w-2/3">
+            <h1 class="title text-[#253D4E] line-clamp-2">
+              Organic 100% Grassfed 85_15 Ground Beef
+            </h1>
+
+            <div class="flex items-center gap-3 my-2">
+              <div class="flex gap-1 items-center">
+                <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star fa-2xs" style="color: #CDCDCD;"></i>
+              </div>
+              <p class="text-sm text-[#7E7E7E]">(4.0)</p>
+            </div>
+
+            <div class="flex justify-between items-center">
+              <div class="flex items-center gap-2">
+                <strong class="text-lg text-[#3BB77E] font-bold title">$2.51</strong>
+                <del class="text-xs title text-[#7E7E7E]">$2.80</del>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="flex gap-5 w-full">
+          <div
+            class="!w-[120px] !h-[120px] overflow-hidden bg-[#f7f7f7] rounded-xl flex items-center justify-center mx-auto">
+            <img class="w-[134px] h-[134px] object-contain rounded-xl"
+              src="../src/images/top sellinng and more/orange.png" alt="orange">
+          </div>
+
+          <div class="w-2/3">
+            <h1 class="title text-[#253D4E] line-clamp-2">
+              Naturally Flavored Salted Caramel Light Roast Coffee
+            </h1>
+
+            <div class="flex items-center gap-3 my-2">
+              <div class="flex gap-1 items-center">
+                <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star fa-2xs" style="color: #CDCDCD;"></i>
+              </div>
+              <p class="text-sm text-[#7E7E7E]">(4.0)</p>
+            </div>
+
+            <div class="flex justify-between items-center">
+              <div class="flex items-center gap-2">
+                <strong class="text-lg text-[#3BB77E] font-bold title">$2.51</strong>
+                <del class="text-xs title text-[#7E7E7E]">$2.80</del>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex flex-col gap-6">
+        <p class="text-[#253D4E] text-2xl title mb-6">Trending Products</p>
+
+        <div class="flex gap-5  w-full">
+          <div
+            class="!w-[120px] !h-[120px] overflow-hidden bg-[#f7f7f7] rounded-xl flex items-center justify-center mx-auto">
+            <img class="w-full h-full object-cover rounded-xl" src="../src/images/top sellinng and more/anar.png"
+              alt="anar">
+          </div>
+
+          <div class="w-2/3">
+            <div class="">
+              <h1 class="title text-[#253D4E] line-clamp-2">Seeds of Change Organic Quinoa,
+                Brown, & Red Rice</h1>
+            </div>
+
+            <div class="flex items-center gap-3 my-2">
+              <div class="flex gap-1 items-center">
+                <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star fa-2xs" style="color: #CDCDCD;"></i>
+              </div>
+              <p class="text-sm text-[#7E7E7E]">(4.0)</p>
+            </div>
+
+
+            <div class="flex justify-between items-center">
+              <div class="flex items-center gap-2">
+                <strong class="text-lg text-[#3BB77E] font-bold title">$2.51</strong>
+                <del class="text-xs title text-[#7E7E7E]">$2.80</del>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex gap-5  w-full">
+          <div
+            class="!w-[120px] !h-[120px] overflow-hidden bg-[#f7f7f7] rounded-xl flex items-center justify-center mx-auto">
+            <img class="w-full h-full object-cover rounded-xl" src="../src/images/top sellinng and more/icecream.png"
+              alt="icecream">
+          </div>
+
+          <div class="w-2/3">
+            <div class="">
+              <h1 class="title text-[#253D4E] line-clamp-2">Seeds of Change Organic Quinoa,
+                Brown, & Red Rice</h1>
+            </div>
+
+            <div class="flex items-center gap-3 my-2">
+              <div class="flex gap-1 items-center">
+                <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star fa-2xs" style="color: #CDCDCD;"></i>
+              </div>
+              <p class="text-sm text-[#7E7E7E]">(4.0)</p>
+            </div>
+
+
+            <div class="flex justify-between items-center">
+              <div class="flex items-center gap-2">
+                <strong class="text-lg text-[#3BB77E] font-bold title">$2.51</strong>
+                <del class="text-xs title text-[#7E7E7E]">$2.80</del>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex gap-5  w-full">
+          <div
+            class="!w-[120px] !h-[120px] overflow-hidden bg-[#f7f7f7] rounded-xl flex items-center justify-center mx-auto">
+            <img class="w-full h-full object-contain rounded-xl" src="../src/images/top sellinng and more/zorat.png"
+              alt="zorat">
+          </div>
+
+          <div class="w-2/3">
+            <div class="">
+              <h1 class="title text-[#253D4E] line-clamp-2">Seeds of Change Organic Quinoa,
+                Brown, & Red Rice</h1>
+            </div>
+
+            <div class="flex items-center gap-3 my-2">
+              <div class="flex gap-1 items-center">
+                <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star fa-2xs" style="color: #CDCDCD;"></i>
+              </div>
+              <p class="text-sm text-[#7E7E7E]">(4.0)</p>
+            </div>
+
+
+            <div class="flex justify-between items-center">
+              <div class="flex items-center gap-2">
+                <strong class="text-lg text-[#3BB77E] font-bold title">$2.51</strong>
+                <del class="text-xs title text-[#7E7E7E]">$2.80</del>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex flex-col gap-6">
+        <p class="text-[#253D4E] text-2xl title mb-6">Recently added</p>
+
+        <div class="flex gap-5  w-full">
+          <div
+            class="!w-[120px] !h-[120px] overflow-hidden bg-[#f7f7f7] rounded-xl flex items-center justify-center mx-auto">
+            <img class="w-full h-full object-cover rounded-xl" src="../src/images/top sellinng and more/anbe.png"
+              alt="anbe">
+          </div>
+
+          <div class="w-2/3">
+            <div class="">
+              <h1 class="title text-[#253D4E] line-clamp-2">Seeds of Change Organic Quinoa,
+                Brown, & Red Rice</h1>
+            </div>
+
+            <div class="flex items-center gap-3 my-2">
+              <div class="flex gap-1 items-center">
+                <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star fa-2xs" style="color: #CDCDCD;"></i>
+              </div>
+              <p class="text-sm text-[#7E7E7E]">(4.0)</p>
+            </div>
+
+
+            <div class="flex justify-between items-center">
+              <div class="flex items-center gap-2">
+                <strong class="text-lg text-[#3BB77E] font-bold title">$2.51</strong>
+                <del class="text-xs title text-[#7E7E7E]">$2.80</del>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex gap-5  w-full">
+          <div
+            class="!w-[120px] !h-[120px] overflow-hidden bg-[#f7f7f7] rounded-xl flex items-center justify-center mx-auto">
+            <img class="w-full h-full object-cover rounded-xl" src="../src/images/top sellinng and more/hendone.png"
+              alt="hendone">
+          </div>
+
+          <div class="w-2/3">
+            <div class="">
+              <h1 class="title text-[#253D4E] line-clamp-2">Seeds of Change Organic Quinoa,
+                Brown, & Red Rice</h1>
+            </div>
+
+            <div class="flex items-center gap-3 my-2">
+              <div class="flex gap-1 items-center">
+                <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star fa-2xs" style="color: #CDCDCD;"></i>
+              </div>
+              <p class="text-sm text-[#7E7E7E]">(4.0)</p>
+            </div>
+
+
+            <div class="flex justify-between items-center">
+              <div class="flex items-center gap-2">
+                <strong class="text-lg text-[#3BB77E] font-bold title">$2.51</strong>
+                <del class="text-xs title text-[#7E7E7E]">$2.80</del>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex gap-5  w-full">
+          <div
+            class="!w-[120px] !h-[120px] overflow-hidden bg-[#f7f7f7] rounded-xl flex items-center justify-center mx-auto">
+            <img class="w-full h-full object-cover rounded-xl" src="../src/images/top sellinng and more/mango.png"
+              alt="mango">
+          </div>
+
+          <div class="w-2/3">
+            <div class="">
+              <h1 class="title text-[#253D4E] line-clamp-2">Seeds of Change Organic Quinoa,
+                Brown, & Red Rice</h1>
+            </div>
+
+            <div class="flex items-center gap-3 my-2">
+              <div class="flex gap-1 items-center">
+                <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star fa-2xs" style="color: #CDCDCD;"></i>
+              </div>
+              <p class="text-sm text-[#7E7E7E]">(4.0)</p>
+            </div>
+
+
+            <div class="flex justify-between items-center">
+              <div class="flex items-center gap-2">
+                <strong class="text-lg text-[#3BB77E] font-bold title">$2.51</strong>
+                <del class="text-xs title text-[#7E7E7E]">$2.80</del>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex flex-col gap-6">
+        <p class="text-[#253D4E] text-2xl title mb-6">Top Rated</p>
+
+        <div class="flex gap-5  w-full">
+          <div
+            class="r!w-[120px] !h-[120px] overflow-hidden bg-[#f7f7f7] rounded-xl flex items-center justify-center mx-auto">
+            <img class="w-full h-full object-cover rounded-xl" src="../src/images/top sellinng and more/anbe2.png"
+              alt="anbe2">
+          </div>
+
+          <div class="w-2/3">
+            <div class="">
+              <h1 class="title text-[#253D4E] line-clamp-2">Seeds of Change Organic Quinoa,
+                Brown, & Red Rice</h1>
+            </div>
+
+            <div class="flex items-center gap-3 my-2">
+              <div class="flex gap-1 items-center">
+                <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star fa-2xs" style="color: #CDCDCD;"></i>
+              </div>
+              <p class="text-sm text-[#7E7E7E]">(4.0)</p>
+            </div>
+
+
+            <div class="flex justify-between items-center">
+              <div class="flex items-center gap-2">
+                <strong class="text-lg text-[#3BB77E] font-bold title">$2.51</strong>
+                <del class="text-xs title text-[#7E7E7E]">$2.80</del>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex gap-5  w-full">
+          <div
+            class="!w-[120px] !h-[120px] overflow-hidden bg-[#f7f7f7] rounded-xl flex items-center justify-center mx-auto">
+            <img class="w-full h-full object-cover rounded-xl" src="../src/images/top sellinng and more/fefel.png"
+              alt="fefel">
+          </div>
+
+          <div class="w-2/3">
+            <div class="">
+              <h1 class="title text-[#253D4E] line-clamp-2">Seeds of Change Organic Quinoa,
+                Brown, & Red Rice</h1>
+            </div>
+
+            <div class="flex items-center gap-3 my-2">
+              <div class="flex gap-1 items-center">
+                <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star fa-2xs" style="color: #CDCDCD;"></i>
+              </div>
+              <p class="text-sm text-[#7E7E7E]">(4.0)</p>
+            </div>
+
+
+            <div class="flex justify-between items-center">
+              <div class="flex items-center gap-2">
+                <strong class="text-lg text-[#3BB77E] font-bold title">$2.51</strong>
+                <del class="text-xs title text-[#7E7E7E]">$2.80</del>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex gap-5  w-full">
+          <div
+            class="!w-[120px] !h-[120px] overflow-hidden bg-[#f7f7f7] rounded-xl flex items-center justify-center mx-auto">
+            <img class="w-full h-full object-contain rounded-xl" src="../src/images/top sellinng and more/milk.png"
+              alt="milk">
+          </div>
+
+          <div class="w-2/3">
+            <div class="">
+              <h1 class="title text-[#253D4E] line-clamp-2">Seeds of Change Organic Quinoa,
+                Brown, & Red Rice</h1>
+            </div>
+
+            <div class="flex items-center gap-3 my-2">
+              <div class="flex gap-1 items-center">
+                <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star fa-2xs" style="color: #CDCDCD;"></i>
+              </div>
+              <p class="text-sm text-[#7E7E7E]">(4.0)</p>
+            </div>
+
+
+            <div class="flex justify-between items-center">
+              <div class="flex items-center gap-2">
+                <strong class="text-lg text-[#3BB77E] font-bold title">$2.51</strong>
+                <del class="text-xs title text-[#7E7E7E]">$2.80</del>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="md:hidden block pl-5">
+      <div class="swiper mySwiper5">
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide">
+            <div class="flex flex-col gap-6">
+              <p class="text-[#253D4E] text-2xl title mb-6">Top Selling</p>
+
+
+              <div class="flex gap-5 w-full">
+                <div
+                  class="!w-[120px] !h-[120px] overflow-hidden bg-[#f7f7f7] rounded-xl flex items-center justify-center mx-auto">
+                  <img class="w-[140px] h-[140px] object-contain rounded-xl"
+                    src="../src/images/top sellinng and more/avakado.png" alt="avakado">
+                </div>
+
+                <div class="w-2/3">
+                  <h1 class="title text-[#253D4E] line-clamp-2">
+                    Nestle Original Coffee-Mate Coffee Creamer
+                  </h1>
+
+                  <div class="flex items-center gap-3 my-2">
+                    <div class="flex gap-1 items-center">
+                      <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                      <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                      <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                      <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                      <i class="fa-solid fa-star fa-2xs" style="color: #CDCDCD;"></i>
+                    </div>
+                    <p class="text-sm text-[#7E7E7E]">(4.0)</p>
+                  </div>
+
+                  <div class="flex justify-between items-center">
+                    <div class="flex items-center gap-2">
+                      <strong class="text-lg text-[#3BB77E] font-bold title">$2.51</strong>
+                      <del class="text-xs title text-[#7E7E7E]">$2.80</del>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="flex gap-5 w-full">
+                <div
+                  class="!w-[120px] !h-[120px] overflow-hidden bg-[#f7f7f7] rounded-xl flex items-center justify-center mx-auto">
+                  <img class="w-[140px] h-[140px] object-contain rounded-xl"
+                    src="../src/images/top sellinng and more/benana.png" alt="banana">
+                </div>
+
+                <div class="w-2/3">
+                  <h1 class="title text-[#253D4E] line-clamp-2">
+                    Organic 100% Grassfed 85_15 Ground Beef
+                  </h1>
+
+                  <div class="flex items-center gap-3 my-2">
+                    <div class="flex gap-1 items-center">
+                      <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                      <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                      <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                      <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                      <i class="fa-solid fa-star fa-2xs" style="color: #CDCDCD;"></i>
+                    </div>
+                    <p class="text-sm text-[#7E7E7E]">(4.0)</p>
+                  </div>
+
+                  <div class="flex justify-between items-center">
+                    <div class="flex items-center gap-2">
+                      <strong class="text-lg text-[#3BB77E] font-bold title">$2.51</strong>
+                      <del class="text-xs title text-[#7E7E7E]">$2.80</del>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="flex gap-5 w-full">
+                <div
+                  class="!w-[120px] !h-[120px] overflow-hidden bg-[#f7f7f7] rounded-xl flex items-center justify-center mx-auto">
+                  <img class="w-[134px] h-[134px] object-contain rounded-xl"
+                    src="../src/images/top sellinng and more/orange.png" alt="orange">
+                </div>
+
+                <div class="w-2/3">
+                  <h1 class="title text-[#253D4E] line-clamp-2">
+                    Naturally Flavored Salted Caramel Light Roast Coffee
+                  </h1>
+
+                  <div class="flex items-center gap-3 my-2">
+                    <div class="flex gap-1 items-center">
+                      <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                      <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                      <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                      <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                      <i class="fa-solid fa-star fa-2xs" style="color: #CDCDCD;"></i>
+                    </div>
+                    <p class="text-sm text-[#7E7E7E]">(4.0)</p>
+                  </div>
+
+                  <div class="flex justify-between items-center">
+                    <div class="flex items-center gap-2">
+                      <strong class="text-lg text-[#3BB77E] font-bold title">$2.51</strong>
+                      <del class="text-xs title text-[#7E7E7E]">$2.80</del>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="swiper-slide">
+            <div class="flex flex-col gap-6">
+              <p class="text-[#253D4E] text-2xl title mb-6">Trending Products</p>
+
+              <div class="flex gap-5  w-full">
+                <div
+                  class="!w-[120px] !h-[120px] overflow-hidden bg-[#f7f7f7] rounded-xl flex items-center justify-center mx-auto">
+                  <img class="w-full h-full object-cover rounded-xl" src="../src/images/top sellinng and more/anar.png"
+                    alt="anar">
+                </div>
+
+                <div class="w-2/3">
+                  <div class="">
+                    <h1 class="title text-[#253D4E] line-clamp-2">Seeds of Change Organic Quinoa,
+                      Brown, & Red Rice</h1>
+                  </div>
+
+                  <div class="flex items-center gap-3 my-2">
+                    <div class="flex gap-1 items-center">
+                      <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                      <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                      <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                      <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                      <i class="fa-solid fa-star fa-2xs" style="color: #CDCDCD;"></i>
+                    </div>
+                    <p class="text-sm text-[#7E7E7E]">(4.0)</p>
+                  </div>
+
+
+                  <div class="flex justify-between items-center">
+                    <div class="flex items-center gap-2">
+                      <strong class="text-lg text-[#3BB77E] font-bold title">$2.51</strong>
+                      <del class="text-xs title text-[#7E7E7E]">$2.80</del>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="flex gap-5  w-full">
+                <div
+                  class="!w-[120px] !h-[120px] overflow-hidden bg-[#f7f7f7] rounded-xl flex items-center justify-center mx-auto">
+                  <img class="w-full h-full object-cover rounded-xl"
+                    src="../src/images/top sellinng and more/icecream.png" alt="icecream">
+                </div>
+
+                <div class="w-2/3">
+                  <div class="">
+                    <h1 class="title text-[#253D4E] line-clamp-2">Seeds of Change Organic Quinoa,
+                      Brown, & Red Rice</h1>
+                  </div>
+
+                  <div class="flex items-center gap-3 my-2">
+                    <div class="flex gap-1 items-center">
+                      <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                      <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                      <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                      <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                      <i class="fa-solid fa-star fa-2xs" style="color: #CDCDCD;"></i>
+                    </div>
+                    <p class="text-sm text-[#7E7E7E]">(4.0)</p>
+                  </div>
+
+
+                  <div class="flex justify-between items-center">
+                    <div class="flex items-center gap-2">
+                      <strong class="text-lg text-[#3BB77E] font-bold title">$2.51</strong>
+                      <del class="text-xs title text-[#7E7E7E]">$2.80</del>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="flex gap-5  w-full">
+                <div
+                  class="!w-[120px] !h-[120px] overflow-hidden bg-[#f7f7f7] rounded-xl flex items-center justify-center mx-auto">
+                  <img class="w-full h-full object-contain rounded-xl"
+                    src="../src/images/top sellinng and more/zorat.png" alt="zorat">
+                </div>
+
+                <div class="w-2/3">
+                  <div class="">
+                    <h1 class="title text-[#253D4E] line-clamp-2">Seeds of Change Organic Quinoa,
+                      Brown, & Red Rice</h1>
+                  </div>
+
+                  <div class="flex items-center gap-3 my-2">
+                    <div class="flex gap-1 items-center">
+                      <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                      <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                      <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                      <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                      <i class="fa-solid fa-star fa-2xs" style="color: #CDCDCD;"></i>
+                    </div>
+                    <p class="text-sm text-[#7E7E7E]">(4.0)</p>
+                  </div>
+
+
+                  <div class="flex justify-between items-center">
+                    <div class="flex items-center gap-2">
+                      <strong class="text-lg text-[#3BB77E] font-bold title">$2.51</strong>
+                      <del class="text-xs title text-[#7E7E7E]">$2.80</del>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="swiper-slide">
+
+            <div class="flex flex-col gap-6">
+              <p class="text-[#253D4E] text-2xl title mb-6">Recently added</p>
+
+              <div class="flex gap-5  w-full">
+                <div
+                  class="!w-[120px] !h-[120px] overflow-hidden bg-[#f7f7f7] rounded-xl flex items-center justify-center mx-auto">
+                  <img class="w-full h-full object-cover rounded-xl" src="../src/images/top sellinng and more/anbe.png"
+                    alt="anbe">
+                </div>
+
+                <div class="w-2/3">
+                  <div class="">
+                    <h1 class="title text-[#253D4E] line-clamp-2">Seeds of Change Organic Quinoa,
+                      Brown, & Red Rice</h1>
+                  </div>
+
+                  <div class="flex items-center gap-3 my-2">
+                    <div class="flex gap-1 items-center">
+                      <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                      <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                      <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                      <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                      <i class="fa-solid fa-star fa-2xs" style="color: #CDCDCD;"></i>
+                    </div>
+                    <p class="text-sm text-[#7E7E7E]">(4.0)</p>
+                  </div>
+
+
+                  <div class="flex justify-between items-center">
+                    <div class="flex items-center gap-2">
+                      <strong class="text-lg text-[#3BB77E] font-bold title">$2.51</strong>
+                      <del class="text-xs title text-[#7E7E7E]">$2.80</del>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="flex gap-5  w-full">
+                <div
+                  class="!w-[120px] !h-[120px] overflow-hidden bg-[#f7f7f7] rounded-xl flex items-center justify-center mx-auto">
+                  <img class="w-full h-full object-cover rounded-xl"
+                    src="../src/images/top sellinng and more/hendone.png" alt="hendone">
+                </div>
+
+                <div class="w-2/3">
+                  <div class="">
+                    <h1 class="title text-[#253D4E] line-clamp-2">Seeds of Change Organic Quinoa,
+                      Brown, & Red Rice</h1>
+                  </div>
+
+                  <div class="flex items-center gap-3 my-2">
+                    <div class="flex gap-1 items-center">
+                      <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                      <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                      <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                      <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                      <i class="fa-solid fa-star fa-2xs" style="color: #CDCDCD;"></i>
+                    </div>
+                    <p class="text-sm text-[#7E7E7E]">(4.0)</p>
+                  </div>
+
+
+                  <div class="flex justify-between items-center">
+                    <div class="flex items-center gap-2">
+                      <strong class="text-lg text-[#3BB77E] font-bold title">$2.51</strong>
+                      <del class="text-xs title text-[#7E7E7E]">$2.80</del>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="flex gap-5  w-full">
+                <div
+                  class="!w-[120px] !h-[120px] overflow-hidden bg-[#f7f7f7] rounded-xl flex items-center justify-center mx-auto">
+                  <img class="w-full h-full object-cover rounded-xl" src="../src/images/top sellinng and more/mango.png"
+                    alt="mango">
+                </div>
+
+                <div class="w-2/3">
+                  <div class="">
+                    <h1 class="title text-[#253D4E] line-clamp-2">Seeds of Change Organic Quinoa,
+                      Brown, & Red Rice</h1>
+                  </div>
+
+                  <div class="flex items-center gap-3 my-2">
+                    <div class="flex gap-1 items-center">
+                      <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                      <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                      <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                      <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                      <i class="fa-solid fa-star fa-2xs" style="color: #CDCDCD;"></i>
+                    </div>
+                    <p class="text-sm text-[#7E7E7E]">(4.0)</p>
+                  </div>
+
+
+                  <div class="flex justify-between items-center">
+                    <div class="flex items-center gap-2">
+                      <strong class="text-lg text-[#3BB77E] font-bold title">$2.51</strong>
+                      <del class="text-xs title text-[#7E7E7E]">$2.80</del>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="swiper-slide">
+            <div class="flex flex-col gap-6"">
+              <p class=" text-[#253D4E] text-2xl title mb-6">Top Rated</p>
+
+              <div class="flex gap-5  w-full">
+                <div
+                  class="r!w-[120px] !h-[120px] overflow-hidden bg-[#f7f7f7] rounded-xl flex items-center justify-center mx-auto">
+                  <img class="w-full h-full object-cover rounded-xl" src="../src/images/top sellinng and more/anbe2.png"
+                    alt="anbe2">
+                </div>
+
+                <div class="w-2/3">
+                  <div class="">
+                    <h1 class="title text-[#253D4E] line-clamp-2">Seeds of Change Organic Quinoa,
+                      Brown, & Red Rice</h1>
+                  </div>
+
+                  <div class="flex items-center gap-3 my-2">
+                    <div class="flex gap-1 items-center">
+                      <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                      <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                      <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                      <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                      <i class="fa-solid fa-star fa-2xs" style="color: #CDCDCD;"></i>
+                    </div>
+                    <p class="text-sm text-[#7E7E7E]">(4.0)</p>
+                  </div>
+
+
+                  <div class="flex justify-between items-center">
+                    <div class="flex items-center gap-2">
+                      <strong class="text-lg text-[#3BB77E] font-bold title">$2.51</strong>
+                      <del class="text-xs title text-[#7E7E7E]">$2.80</del>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="flex gap-5  w-full">
+                <div
+                  class="!w-[120px] !h-[120px] overflow-hidden bg-[#f7f7f7] rounded-xl flex items-center justify-center mx-auto">
+                  <img class="w-full h-full object-cover rounded-xl" src="../src/images/top sellinng and more/fefel.png"
+                    alt="fefel">
+                </div>
+
+                <div class="w-2/3">
+                  <div class="">
+                    <h1 class="title text-[#253D4E] line-clamp-2">Seeds of Change Organic Quinoa,
+                      Brown, & Red Rice</h1>
+                  </div>
+
+                  <div class="flex items-center gap-3 my-2">
+                    <div class="flex gap-1 items-center">
+                      <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                      <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                      <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                      <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                      <i class="fa-solid fa-star fa-2xs" style="color: #CDCDCD;"></i>
+                    </div>
+                    <p class="text-sm text-[#7E7E7E]">(4.0)</p>
+                  </div>
+
+
+                  <div class="flex justify-between items-center">
+                    <div class="flex items-center gap-2">
+                      <strong class="text-lg text-[#3BB77E] font-bold title">$2.51</strong>
+                      <del class="text-xs title text-[#7E7E7E]">$2.80</del>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="flex gap-5  w-full">
+                <div
+                  class="!w-[120px] !h-[120px] overflow-hidden bg-[#f7f7f7] rounded-xl flex items-center justify-center mx-auto">
+                  <img class="w-full h-full object-contain rounded-xl"
+                    src="../src/images/top sellinng and more/milk.png" alt="milk">
+                </div>
+
+                <div class="w-2/3">
+                  <div class="">
+                    <h1 class="title text-[#253D4E] line-clamp-2">Seeds of Change Organic Quinoa,
+                      Brown, & Red Rice</h1>
+                  </div>
+
+                  <div class="flex items-center gap-3 my-2">
+                    <div class="flex gap-1 items-center">
+                      <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                      <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                      <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                      <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                      <i class="fa-solid fa-star fa-2xs" style="color: #CDCDCD;"></i>
+                    </div>
+                    <p class="text-sm text-[#7E7E7E]">(4.0)</p>
+                  </div>
+
+
+                  <div class="flex justify-between items-center">
+                    <div class="flex items-center gap-2">
+                      <strong class="text-lg text-[#3BB77E] font-bold title">$2.51</strong>
+                      <del class="text-xs title text-[#7E7E7E]">$2.80</del>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- footer poster -->
+
+  <section class="c-container pb-10 md:py-20">
+    <div class="relative w-full  h-[170px] md:h-full bg-[#DEF9EC]  overflow-hidden rounded-3xl">
+      <img class="absolute right-0 left-0 top-0 w-full h-full object-cover" src="../src/images/bg-hero2.png"
+        alt="bg-hero">
+
+      <div class="flex  items-center">
+
+        <img
+          class="absolute right-0 md:right-10 bottom-0 lg:max-w-[417px] md:max-w-[417px] max-w-[200px] w-full h-auto object-cover pointer-events-none"
+          src="../src/images/poster1.png" alt="bg-poster">
+        <img class="hidden md:block absolute right-[13rem] -top-5 max-w-[203px] h-auto object-cover pointer-events-none"
+          src="../src/images/poster2.png" alt="bg-poster2">
+        <img class="hidden md:block absolute right-[20rem] top-10 max-w-[272px] h-auto object-cover pointer-events-none"
+          src="../src/images/poster3.png" alt="bg-poster3">
+        <img
+          class="hidden md:block absolute right-[28rem] -bottom-20 max-w-[172px] h-auto object-cover pointer-events-none"
+          src="../src/images/poster4.png" alt="bg-poster4">
+
+        <div class="m-4 md:m-16 z-40">
+          <p class="text-xl md:text-3xl lg:text-5xl title text-[#1C4037] md:w-2/3 w-1/2">Stay home & get
+            your daily
+            needs from our shop</p>
+          <p class="hidden md:block mt-12 text-3xl lato text-[#2B3D34] font-bold mb-16">Start You'r Daily Sopping with
+            Nest Mart</p>
+        </div>
+      </div>
+    </div>
+
+
+  </section>
+
+
+  <!-- footer -->
+
+  <section class="c-container py-20">
+    <div class="flex flex-col md:flex-row justify-between md:gap-60 border-b border-[#D8F1E5] pb-10">
+
+      <div class="flex flex-col mb-2">
+
+        <div class="flex w-[230px] gap-2 mb-10">
+          <img class="w-[80px] h-full object-cover" src="../src/images/logo.png" alt="logo">
+          <div class="flex flex-col">
+            <h1 class="text-[#3BB77E] font-bold title md:text-4xl text-3xl tracking-widest">LOGO</h1>
+            <p class="logo-title w-full text-sm text-[#253D4E]">Mart & Grocery</p>
+          </div>
+        </div>
+        <p class="text-xl text-[#253D4E] mb-8">Pellentesque posuere orci lobortis</p>
+        <div class="flex gap-2 items-center mb-2">
+          <i class="fa-solid fa-location-dot fa-lg" style="color: #3BB77E;"></i>
+          <p class="title font-bold text-[#253D4E]">Address: <span class="lato md:text-lg text-sm">5171 W Campbell Ave
+              undefined Kent, Utah 53127 United States</span></p>
+        </div>
+
+        <div class="flex gap-2 items-center mb-3">
+          <i class="fa-solid fa-headset fa-lg" style="color: #3BB77E;"></i>
+          <p class="title font-bold text-[#253D4E]">Call Us: <span class="lato md:text-lg text-sm">(+91) -
+              540-025-124553 </span></p>
+        </div>
+
+        <div class="flex gap-2 items-center mb-3">
+          <i class="fa-solid fa-paper-plane fa-lg" style="color: #3BB77E;"></i>
+          <p class="title font-bold text-[#253D4E]">Email: <span
+              class="lato md:text-lg text-sm">contact@nestmart.com</span></p>
+        </div>
+        <div class="flex gap-2 items-center mb-3">
+          <i class="fa-solid fa-clock fa-lg" style="color: #3BB77E;"></i>
+          <p class="title font-bold text-[#253D4E]">Hours: <span class="lato md:text-lg text-sm">10:00 - 18:00, Mon -
+              Sat </span></p>
+        </div>
+
+      </div>
+
+
+     <div class="border-t md:border-none border-[#E5E5E5] py-4">
+  <button class="accordion-btn w-full flex justify-between items-center md:cursor-default">
+    <p class="title md:text-3xl text-xl text-[#253D4E]">Company</p>
+    <span class="md:hidden">▼</span>
+  </button>
+
+  <div class="accordion-content hidden md:block mt-4">
+    <div class="flex flex-col">
+    <a href="#" class="md:text-lg hover:underline text-[#253D4E] mb-4">About us</a>
+    <a href="#" class="md:text-lg hover:underline text-[#253D4E] mb-4">Delivery Information</a>
+    <a href="#" class="md:text-lg hover:underline text-[#253D4E] mb-4">Privacy Policy</a>
+    <a href="#" class="md:text-lg hover:underline text-[#253D4E] mb-4">Terms & Conditions</a>
+    <a href="#" class="md:text-lg hover:underline text-[#253D4E] mb-4">Contact Us</a>
+    <a href="#" class="md:text-lg hover:underline text-[#253D4E] mb-4">Support Center</a>
+    <a href="#" class="md:text-lg hover:underline text-[#253D4E] mb-4">Careers</a>
+    </div>
+  </div>
+</div>
+
+<div class="border-y md:border-none border-[#E5E5E5] py-4">
+  <button class="accordion-btn w-full flex justify-between items-center md:cursor-default">
+    <p class="title md:text-3xl text-xl text-[#253D4E]">Information</p>
+    <span class="md:hidden">▼</span>
+  </button>
+
+  <div class="accordion-content hidden md:block my-4">
+    <div class="flex-col flex">
+      <a href="#" class="md:text-lg hover:underline text-[#253D4E] mb-4">Search Terms</a>
+    <a href="#" class="md:text-lg hover:underline text-[#253D4E] mb-4">Advanced Search</a>
+    <a href="#" class="md:text-lg hover:underline text-[#253D4E] mb-4">Help & FAQ's</a>
+    <a href="#" class="md:text-lg hover:underline text-[#253D4E] mb-4">Store Location</a>
+    <a href="#" class="md:text-lg hover:underline text-[#253D4E] mb-4">Orders & Returns</a>
+    <a href="#" class="md:text-lg hover:underline text-[#253D4E] mb-4">Feedback for us</a>
+    </div>
+  </div>
+</div>
 
 
 
 
 
+      <div class="flex flex-col mt-4">
+        <p class="title md:text-3xl text-xl text-[#253D4E] mb-8">App & Payment</p>
+        <p class="md:text-lg text-sm text-[#7E7E7E] mb-8">Install NetMart App from App Store or Google Play</p>
 
+        <div class="flex gap-5 w-full md:justify-evenly justify-center mb-4">
+          <img class="w-2/5 h-auto object-cover" src="../src/images/footer/bb5725775e87bd4a8f038d60b283b45a996ad9f1.png"
+            alt="app-store">
+          <img class="w-2/5 h-auto object-cover" src="../src/images/footer/bg-hero2.png" alt="google-play">
+        </div>
+        <p class="mb-8 text-[#7E7E7E]">Secured Payment Gateways</p>
+        <img class="md:w-[224px] w-full h-[40px] object-fill"
+          src="../src/images/footer/abfde2069df20d065d424eb84b76f8b62e604c51.png" alt="payment">
 
+      </div>
 
-
-
-
-
-
-
-
-
+    </div>
+    <p class="text-center text-[#253D4E] py-2">All Rights Reserved</p>
+  </section>
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script type="module" src="../src/dist/script.js"></script>

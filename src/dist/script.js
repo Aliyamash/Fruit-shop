@@ -38,15 +38,15 @@ const swiper = new Swiper(".mySwiper", {
     centeredSlides: true,
     breakpoints: {
         0: { slidesPerView: 1.2 },
-        768: { slidesPerView: 1 }
-    }
+        768: { slidesPerView: 1 },
+    },
 });
 var swiper1 = new Swiper(".mySwiper1", {
     spaceBetween: 15,
     breakpoints: {
         0: { slidesPerView: 2.1 },
         768: { slidesPerView: 4 },
-        1024: { slidesPerView: 5 }
+        1024: { slidesPerView: 5 },
     },
     autoHeight: true,
     navigation: {
@@ -54,18 +54,45 @@ var swiper1 = new Swiper(".mySwiper1", {
         prevEl: ".swiper-button-prev-1",
     },
 });
-var swiper1 = new Swiper(".mySwiper2", {
+var swiper2 = new Swiper(".mySwiper2", {
     spaceBetween: 15,
     breakpoints: {
         0: { slidesPerView: 2.1 },
         768: { slidesPerView: 4 },
-        1024: { slidesPerView: 5 }
+        1024: { slidesPerView: 5 },
     },
     autoHeight: true,
     navigation: {
         nextEl: ".swiper-button-next-2",
         prevEl: ".swiper-button-prev-2",
     },
+});
+var swiper3 = new Swiper(".mySwiper3", {
+    spaceBetween: 15,
+    breakpoints: {
+        0: { slidesPerView: 2.1 },
+    },
+});
+var swiper4 = new Swiper(".mySwiper4", {
+    spaceBetween: 15,
+    slidesPerView: 1
+});
+var swiper5 = new Swiper(".mySwiper5", {
+    spaceBetween: 15,
+    slidesPerView: 1.2
+});
+const buttons = document.querySelectorAll(".accordion-btn");
+buttons.forEach((btn) => {
+    btn.addEventListener("click", () => {
+        const content = btn.nextElementSibling;
+        if (!content)
+            return;
+        if (window.innerWidth < 768) {
+            content.classList.toggle("hidden");
+            const icon = btn.querySelector("span");
+            icon === null || icon === void 0 ? void 0 : icon.classList.toggle("rotate-180");
+        }
+    });
 });
 export {};
 //# sourceMappingURL=script.js.map

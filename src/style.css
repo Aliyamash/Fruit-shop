@@ -107,18 +107,18 @@ input::-webkit-inner-spin-button {
 }
 
 
-/* 
+.mySwiper1 .swiper-wrapper {
+  padding: 40px 0; 
+}
+.mySwiper2 .swiper-wrapper {
+  padding: 40px 0; 
+}
+.mySwiper3 .swiper-wrapper {
+  padding: 40px 0; 
+}
+.mySwiper4 .swiper-wrapper {
+  padding-bottom: 180px ; 
+  overflow: unset;
+}
 
-<div class="flex flex-row w-fit bg-white border border-1 border-[#BCE3C9] absolute top-1/2 text-[#BCE3C9]">
-    
-                <div class="px-1">
-                  <i class="fa-regular fa-heart fa-2xs"></i>
-                </div>
-                <div class="border-r border-l px-1">
-                  <i class="fa-solid fa-shuffle fa-2xs"></i>
-                </div>
-                <div class="px-1">
-                    <i class="fa-regular fa-eye fa-2xs"></i>
-                </div>
-              </div>
-*/
+

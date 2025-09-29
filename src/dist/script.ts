@@ -50,36 +50,72 @@ const swiper = new Swiper(".mySwiper", {
   spaceBetween: 15,
   centeredSlides: true,
   breakpoints: {
-    0: { slidesPerView: 1.2 as const },  
-    768: { slidesPerView: 1 } 
-  }
+    0: { slidesPerView: 1.2 as const },
+    768: { slidesPerView: 1 },
+  },
 });
 
 var swiper1 = new Swiper(".mySwiper1", {
   spaceBetween: 15,
-  breakpoints:{
-  0:{ slidesPerView: 2.1 as const },
-  768: { slidesPerView: 4 }, 
-  1024: { slidesPerView: 5 }
+  breakpoints: {
+    0: { slidesPerView: 2.1 as const },
+    768: { slidesPerView: 4 },
+    1024: { slidesPerView: 5 },
   },
   autoHeight: true,
-      navigation: {
-        nextEl: ".swiper-button-next-1",
-        prevEl: ".swiper-button-prev-1",
-      },
-
-    });
-    var swiper1 = new Swiper(".mySwiper2", {
+  navigation: {
+    nextEl: ".swiper-button-next-1",
+    prevEl: ".swiper-button-prev-1",
+  },
+});
+var swiper2 = new Swiper(".mySwiper2", {
   spaceBetween: 15,
-  breakpoints:{
-  0:{ slidesPerView: 2.1 as const },
-  768: { slidesPerView: 4 }, 
-  1024: { slidesPerView: 5 }
+  breakpoints: {
+    0: { slidesPerView: 2.1 as const },
+    768: { slidesPerView: 4 },
+    1024: { slidesPerView: 5 },
   },
   autoHeight: true,
-      navigation: {
-        nextEl: ".swiper-button-next-2",
-        prevEl: ".swiper-button-prev-2",
-      },
+  navigation: {
+    nextEl: ".swiper-button-next-2",
+    prevEl: ".swiper-button-prev-2",
+  },
+});
 
-    });
+var swiper3 = new Swiper(".mySwiper3", {
+  spaceBetween: 15,
+  breakpoints: {
+    0: { slidesPerView: 2.1 as const },
+  },
+});
+
+
+
+var swiper4 = new Swiper(".mySwiper4", {
+  spaceBetween: 15,
+  slidesPerView: 1 as const 
+
+});
+
+var swiper5 = new Swiper(".mySwiper5", {
+  spaceBetween: 15,
+  slidesPerView: 1.2 as const 
+
+});
+
+const buttons = document.querySelectorAll<HTMLButtonElement>(".accordion-btn");
+
+buttons.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    const content = btn.nextElementSibling as HTMLElement | null;
+    if (!content) return;
+
+    if (window.innerWidth < 768) {
+      content.classList.toggle("hidden");
+
+      const icon = btn.querySelector("span");
+      icon?.classList.toggle("rotate-180");
+    }
+  });
+});
+
