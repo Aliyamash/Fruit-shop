@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "concurrently \"tsc --watch\" \"npx tailwindcss -i ./src/style.css -o ./src/dist/stylesheet.css --watch\"",
-    "build:css": "tailwindcss -i ./src/style.css -o ./dist/style.css --minify",
+    "build:css": "npx tailwindcss -i ./src/style.css -o ./dist/style.css --minify",
     "build:ts": "tsc --outDir dist",
     "copy:html": "cp ./pages/*.html ./dist/ || true",
     "copy:img": "cp -r ./src/image ./dist/image || true",
