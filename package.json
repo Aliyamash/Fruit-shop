@@ -1,24 +1,18 @@
 {
-  "name": "taiwind",
+  "name": "tailwind-typescript-app",
   "version": "1.0.0",
-  "description": "",
+  "description": "Static site with Tailwind & TypeScript",
   "main": "index.js",
   "scripts": {
-    "dev": "concurrently \"tsc --watch\" \"npx tailwindcss -i ./src/style.css -o ./src/dist/stylesheet.css --watch\"",
-    "build:css": "npx tailwindcss -i ./src/style.css -o ./dist/style.css --minify",
-    "build:ts": "tsc --outDir dist",
-    "copy:html": "cp ./pages/*.html ./dist/ || true",
-    "copy:img": "cp -r ./src/image ./dist/image || true",
-    "build": "npm run build:css && npm run build:ts && npm run copy:html && npm run copy:img"
+    "dev": "concurrently \"tsc --watch\" \"npx tailwindcss -i ./src/style.css -o ./dist/stylesheet.css --watch\"",
+    "build": "tsc && npx tailwindcss -i ./src/style.css -o ./dist/stylesheet.css && cp src/index.html dist/index.html"
   },
-  "author": "",
+  "author": "Ali",
   "license": "ISC",
   "devDependencies": {
-    "autoprefixer": "^10.4.21",
     "concurrently": "^9.2.1",
-    "postcss": "^8.5.6",
     "tailwindcss": "^3.4.17",
-    "ts-node": "^10.9.2",
-    "typescript": "^5.9.2"
+    "typescript": "^5.6.3"
   }
 }
+

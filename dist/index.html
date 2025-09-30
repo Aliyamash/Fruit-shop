@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../dist/style.css">
+  <link rel="stylesheet" href="../src/dist/stylesheet.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <title>Document</title>
@@ -37,7 +37,7 @@
         <div class="flex justify-between w-full gap-8">
           <!-- Search bar -->
           <div
-            class="flex items-center md:w-2/3 ml-28 rounded-md w-full px-4 py-2 md:border-2 border-[#BCE3C9] justify-start md:justify-between">
+            class="flex items-center md:w-2/3 md:ml-28 rounded-md w-full px-4 py-2 md:border-2 border-[#BCE3C9] justify-start md:justify-between">
             <input
               class="hidden md:block focus:outline-none w-full max-w-[300px] md:max-w-[300px] lg:max-w-[500px] xl:max-w-[700px] "
               type="text" placeholder="Search for items">
@@ -72,7 +72,7 @@
   <hr>
 
   <!-- second header -->
-  <div class="bg-[#33333381] w-full h-full absolute top-0 right-0 left-0 z-10 translate-x-[-100%]" id="overlay"></div>
+  <div class="bg-[#33333381] w-full h-full absolute top-0 right-0 left-0 translate-x-[-100%]" id="overlay"></div>
   <section class="header-mobile md:header-desktop" id="mobile-header">
     <div class=" c-container py-4 ">
       <div class="flex flex-col md:flex-row md:items-center justify-between gap-2">
@@ -481,8 +481,8 @@
 
   <!-- hero -->
     <section class="c-container">
-    <div class="relative w-full md:h-[538px] h-full bg-[#FDC04033]  overflow-hidden rounded-3xl">
-      <img class="absolute right-0 left-0 top-0 w-full h-full object-cover" src="../src/images/bg-hero2.png"
+    <div class="relative w-full md:h-[538px] h-full -z-20 bg-[#FDC04033] overflow-hidden rounded-3xl">
+      <img class="absolute right-0 left-0 top-0 w-full h-full object-cover -z-10" src="../src/images/bg-hero2.png"
         alt="bg-hero">
 
       <div class="flex  items-center">
@@ -491,15 +491,15 @@
           class="absolute right-0 top-0 lg:max-w-[895px] md:max-w-[695px] max-w-[200px] w-full h-auto object-cover pointer-events-none"
           src="../src/images/bg-hero.png" alt="bg-hero">
 
-        <div class="p-6 md:p-24 z-50">
+        <div class="p-6 md:p-24">
           <p class="text-xl md:text-5xl lg:text-7xl title text-[#253D4E] w-1/2 md:w-2/3">Don’t miss
             amazing grocery deals</p>
           <p class="hidden md:block mt-12 text-3xl lato text-[#7E7E7E] font-thin mb-16">Sign up
             for the daily newsletter</p>
 
           <div class="md:flex hidden items-center bg-white rounded-full w-[442px] pl-6 ">
-            <i class="fa-regular fa-paper-plane fa-lg text-zinc-400 mr-4 z-50"></i>
-            <input class="w-full lato z-40 outline-none" placeholder="Your email address" type="text">
+            <i class="fa-regular fa-paper-plane fa-lg text-zinc-400 mr-4"></i>
+            <input class="w-full lato outline-none" placeholder="Your email address" type="text">
             <button class="bg-[#3BB77E] rounded-full px-8 py-4 shadow-md text-lg text-white">Subscribe</button>
           </div>
         </div>
@@ -508,7 +508,7 @@
     </div>
     <div class="flex md:hidden items-center rounded-full w-full pl-6  mt-4 bg-[#F5F5F5]">
       <i class="fa-regular fa-paper-plane fa-lg text-zinc-400 mr-4"></i>
-      <input class="w-full lato z-40 bg-transparent" placeholder="Your email address" type="text">
+      <input class="w-full lato bg-transparent" placeholder="Your email address" type="text">
       <button class="bg-[#3BB77E] rounded-full  px-6 py-3 shadow-md  text-white">Subscribe</button>
     </div>
 
@@ -3679,7 +3679,7 @@
   </section>
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script type="module" src="../dist/script.js"></script>
+  <script type="module" src="./script.js"></script>
 </body>
 
 </html>
