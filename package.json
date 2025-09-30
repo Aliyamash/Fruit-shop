@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "concurrently \"tsc --watch\" \"npx tailwindcss -i ./src/style.css -o ./dist/stylesheet.css --watch\"",
-    "build": "tsc && npx tailwindcss -i ./src/style.css -o ./dist/stylesheet.css && cp src/index.html dist/index.html"
+    "build": "tsc && npx tailwindcss -i ./src/style.css -o ./dist/stylesheet.css && cp src/index.html dist/index.html && cp -r src/images dist/images && cp -r src/fonts dist/fonts"
   },
   "author": "Ali",
   "license": "ISC",
@@ -15,4 +15,3 @@
     "typescript": "^5.6.3"
   }
 }
-

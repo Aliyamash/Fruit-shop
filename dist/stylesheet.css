@@ -557,7 +557,7 @@ video {
 @font-face {
   font-family: "Montserrat";
 
-  src: url("../src/fonts/Montserrat-VariableFont_wght.ttf");
+  src: url("../src/fonts/Montserrat-Italic-VariableFont_wght.ttf");
 
   font-style: normal;
 
@@ -843,10 +843,6 @@ video {
 
 .mb-8 {
   margin-bottom: 2rem;
-}
-
-.ml-28 {
-  margin-left: 7rem;
 }
 
 .mr-4 {
@@ -1998,16 +1994,16 @@ input::-webkit-inner-spin-button {
     margin-bottom: 2rem;
   }
 
+  .md\:ml-28 {
+    margin-left: 7rem;
+  }
+
   .md\:mt-0 {
     margin-top: 0px;
   }
 
   .md\:mt-40 {
     margin-top: 10rem;
-  }
-
-  .md\:ml-28 {
-    margin-left: 7rem;
   }
 
   .md\:block {
@@ -2265,3 +2261,5 @@ input::-webkit-inner-spin-button {
     grid-template-columns: repeat(10, minmax(0, 1fr));
   }
 }
+
+
