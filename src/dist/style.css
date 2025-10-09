@@ -1,25 +1,25 @@
 @tailwind base;
 @font-face {
   font-family: "Montserrat";
-  src: url("../src/fonts/Montserrat-Italic-VariableFont_wght.ttf");
+  src: url("../fonts/Montserrat-VariableFont_wght.ttf");
   font-style: normal;
   font-weight: 400;
 }
 @font-face {
   font-family: "Quicksand";
-  src: url("../src/fonts/static/Quicksand-medium.ttf");
+  src: url("../fonts/static/Quicksand-medium.ttf");
   font-style: normal;
   font-weight: 600;
 }
 @font-face {
   font-family: "Quicksand-bold";
-  src: url("../src/fonts/static/Quicksand-bold.ttf");
+  src: url("../fonts/static/Quicksand-bold.ttf");
   font-style: normal;
   font-weight: 900;
 }
 @font-face {
   font-family: "lato";
-  src: url("../src/fonts/Lato-Regular.ttf");
+  src: url("../fonts/Lato-Regular.ttf");
   font-style: normal;
   font-weight: 900;
 }
@@ -84,7 +84,6 @@ body {
   width: 100%;
   height: 100%
 }
-
 
 .swiper-slide {
   width: 342px;

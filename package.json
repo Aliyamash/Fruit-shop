@@ -1,18 +1,16 @@
 {
-  "name": "tailwind-typescript-app",
+  "name": "taiwind",
   "version": "1.0.0",
-  "description": "Static site with Tailwind & TypeScript",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "concurrently \"tsc --watch\" \"npx tailwindcss -i ./src/style.css -o ./dist/stylesheet.css --watch\"",
-    "build": "tsc && npx tailwindcss -i ./src/style.css -o ./dist/stylesheet.css && cpx src/index.html dist && cpx src/script.js dist && cpx \"src/images/**/*\" dist/images && cpx \"src/fonts/**/*\" dist/fonts"
+    "test": "echo \"Error: no test specified\" && exit 1",
+     "dev": "concurrently \"tsc --watch\" \"npx tailwindcss -i ./src/dist/style.css -o ./src/stylesheet.css --watch\""
   },
-  "author": "Ali",
+  "author": "",
   "license": "ISC",
   "devDependencies": {
     "concurrently": "^9.2.1",
-    "cpx": "^1.5.0",
-    "tailwindcss": "^3.4.17",
-    "typescript": "^5.6.3"
+    "tailwindcss": "^3.4.17"
   }
 }
